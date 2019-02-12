@@ -1,0 +1,4 @@
+#Mon Feb 11 16:03:44 IST 2019
+base.0=C\:\\Users\\Lahiru Sandaruwan\\Desktop\\ionic app\\ionicTest\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
