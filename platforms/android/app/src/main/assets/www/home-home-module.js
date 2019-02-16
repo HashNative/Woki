@@ -61,7 +61,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title color=\"light\">\n      Woki\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div #map id=\"map\"></div>\n</ion-content>\n\n\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content padding>\r\n  <!-- <div #map id=\"map\"></div> -->\r\n</ion-content>\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n        <ion-alert-controller (click)=\"presentAlert()\">\r\n          <ion-icon name=\"calendar\"></ion-icon>\r\n        </ion-alert-controller>\r\n      </ion-fab-list>\r\n      </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -72,7 +72,7 @@ module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title color=\"light\">
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "app-home #map {\n  height: 100%;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXExhaGlydSBTYW5kYXJ1d2FuXFxEZXNrdG9wXFxpb25pYyBhcHBcXGlvbmljVGVzdC9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHUSxZQUFZO0VBQ1osV0FDSixFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImFwcC1ob21lIHtcclxuXHJcbiAgICAjbWFwIHtcclxuICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgICAgd2lkdGg6IDEwMCVcclxuICAgIH1cclxuXHJcbn0iXX0= */"
+module.exports = "app-home #map {\n  height: 100%;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXERlbGwgcGNcXERlc2t0b3BcXFNhbXBsZVxcd29raVxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHUSxZQUFZO0VBQ1osV0FDSixFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImFwcC1ob21lIHtcclxuXHJcbiAgICAjbWFwIHtcclxuICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgICAgd2lkdGg6IDEwMCVcclxuICAgIH1cclxuXHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -100,11 +100,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var HomePage = /** @class */ (function () {
     function HomePage() {
     }
-    HomePage.prototype.ionViewDidLoad = function () {
+    HomePage.prototype.ngOnInit = function () {
         this.initMap();
     };
     HomePage.prototype.initMap = function () {
-        var coords = new google.maps.LatLng(45, 100);
+        var coords = new google.maps.LatLng(6.874478, 79.879220);
         var mapOptions = {
             center: coords,
             zoom: 14,

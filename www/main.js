@@ -911,7 +911,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+module.exports = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n"
 
 /***/ }),
 
@@ -1036,7 +1036,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  google-map works!\n</p>\n"
+module.exports = "<div #map id=\"map\"></div>"
 
 /***/ }),
 
@@ -1047,7 +1047,7 @@ module.exports = "<p>\n  google-map works!\n</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2dvb2dsZS1tYXAvZ29vZ2xlLW1hcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "app-google-map #map {\n  height: 100% !important;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ29vZ2xlLW1hcC9DOlxcVXNlcnNcXERlbGwgcGNcXERlc2t0b3BcXFNhbXBsZVxcd29raVxcV29raS9zcmNcXGFwcFxcZ29vZ2xlLW1hcFxcZ29vZ2xlLW1hcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUdRLHVCQUF1QjtFQUN2QixXQUFXLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9nb29nbGUtbWFwL2dvb2dsZS1tYXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJhcHAtZ29vZ2xlLW1hcHtcclxuXHJcbiAgICAjbWFwe1xyXG4gICAgICAgIGhlaWdodDogMTAwJSAhaW1wb3J0YW50O1xyXG4gICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgfVxyXG5cclxufSJdfQ== */"
 
 /***/ }),
 
@@ -1076,7 +1076,21 @@ var GoogleMapComponent = /** @class */ (function () {
     function GoogleMapComponent() {
     }
     GoogleMapComponent.prototype.ngOnInit = function () {
+        this.initMap();
     };
+    GoogleMapComponent.prototype.initMap = function () {
+        var coord = new google.maps.LatLng(45, 100);
+        var mapOptions = {
+            center: coord,
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('map'),
+        __metadata("design:type", Object)
+    ], GoogleMapComponent.prototype, "mapElement", void 0);
     GoogleMapComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-google-map',
@@ -1153,7 +1167,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Lahiru Sandaruwan\Desktop\ionic app\ionicTest\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Dell pc\Desktop\Sample\woki\Woki\src\main.ts */"./src/main.ts");
 
 
 /***/ })
