@@ -1,36 +1,39 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-import {} from 'google-maps';
+import { Component, OnInit } from '@angular/core';
+import { ToastController, Platform, LoadingController } from '@ionic/angular';
+import { GoogleMaps, GoogleMap, GoogleMapsEvent, Marker, GoogleMapsAnimation, MyLocation } from '@ionic-native/google-maps';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  @ViewChild('map') mapElement;
-  map: any;
+  map: GoogleMap;
+  loading: any;
 
-  constructor() {
-
+  constructor(
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController,
+    private platform: Platform) { 
   }
 
-  ngOnInit() {
-    this.initMap();
+  async ngOnInit() {
+    await this.platform.ready();
+    await this.loadMap();
   }
 
-  initMap() {
-
-    let coords = new google.maps.LatLng(6.874478, 79.879220);
-
-    let mapOptions: google.maps.MapOptions = {
-      center: coords,
-      zoom: 14,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-
-    this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
-
+  loadMap() {
+    this.map = GoogleMaps.create('map_canvas', {
+      camera: {
+        target: {
+          lat: 6.874495,
+          lng: 79.879188
+        },
+        zoom: 18,
+        tilt: 30
+      }
+    });
   }
 
 }
