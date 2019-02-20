@@ -1954,7 +1954,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div id=\"map_canvas\"></div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n        <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n            <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n            <ion-fab-list side=\"end\">\r\n              <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n              <ion-alert-controller (click)=\"presentAlert()\">\r\n                <ion-icon name=\"calendar\"></ion-icon>\r\n              </ion-alert-controller>\r\n            </ion-fab-list>\r\n            </ion-fab>\r\n      </ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  \r\n  <div id=\"map_canvas\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      </ion-fab-list>\r\n    </ion-fab>\r\n  </div>\r\n\r\n  \r\n\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n        <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n            <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n            <ion-fab-list side=\"end\">\r\n              <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n              <ion-alert-controller (click)=\"presentAlert()\">\r\n                <ion-icon name=\"calendar\"></ion-icon>\r\n              </ion-alert-controller>\r\n            </ion-fab-list>\r\n            </ion-fab>\r\n      </ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -1965,7 +1965,7 @@ module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"ligh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map_canvas {\n  width: 90%;\n  height: 80%;\n  border: 1px solid red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXExhaGlydVxcRGVza3RvcFxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxVQUFVO0VBQ1YsV0FBVztFQUNYLHFCQUFxQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXBfY2FudmFzIHtcclxuICAgIHdpZHRoOiA5MCU7XHJcbiAgICBoZWlnaHQ6IDgwJTtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHJlZDtcclxuICB9XHJcbiAgIl19 */"
+module.exports = "#map_canvas {\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXExhaGlydVxcRGVza3RvcFxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXBfY2FudmFzIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuICAiXX0= */"
 
 /***/ }),
 
@@ -2051,6 +2051,7 @@ var HomePage = /** @class */ (function () {
         });
     };
     HomePage.prototype.loadMap = function () {
+        var image = 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png';
         this.map = _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMaps"].create('map_canvas', {
             camera: {
                 target: {
@@ -2058,8 +2059,8 @@ var HomePage = /** @class */ (function () {
                     lng: 79.879188
                 },
                 zoom: 18,
-                tilt: 30
-            }
+            },
+            mapType: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsMapTypeId"].ROADMAP
         });
     };
     HomePage = __decorate([
