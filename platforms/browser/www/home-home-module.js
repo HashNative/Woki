@@ -1954,7 +1954,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  \r\n  <div id=\"map_canvas\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      </ion-fab-list>\r\n    </ion-fab>\r\n  </div>\r\n\r\n  \r\n\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n        <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n            <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n            <ion-fab-list side=\"end\">\r\n              <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n              <ion-alert-controller (click)=\"presentAlert()\">\r\n                <ion-icon name=\"calendar\"></ion-icon>\r\n              </ion-alert-controller>\r\n            </ion-fab-list>\r\n            </ion-fab>\r\n      </ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  \r\n  <div id=\"map_canvas\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      </ion-fab-list>\r\n    </ion-fab>\r\n  </div>\r\n\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n        <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n            <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n            <ion-fab-list side=\"end\">\r\n              <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n              <ion-alert-controller (click)=\"presentAlert()\">\r\n                <ion-icon name=\"calendar\"></ion-icon>\r\n              </ion-alert-controller>\r\n            </ion-fab-list>\r\n            </ion-fab>\r\n      </ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2062,6 +2062,13 @@ var HomePage = /** @class */ (function () {
             },
             mapType: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsMapTypeId"].ROADMAP
         });
+        var marker = new this.google.maps.Marker({
+            position: new this.google.maps.LatLng(5.376964, 100.399383),
+            icon: image,
+            map: this.map,
+            title: 'Click here for more details' // Marker ALT Text
+        });
+        marker.setMap(this.map);
     };
     HomePage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

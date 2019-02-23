@@ -1,86 +1,74 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastController, Platform, LoadingController } from '@ionic/angular';
-import { GoogleMaps, GoogleMap, GoogleMapsEvent, Marker, GoogleMapsAnimation, MyLocation, GoogleMapsMapTypeId } from '@ionic-native/google-maps';
+import { ToastController, Platform, LoadingController, NavController } from '@ionic/angular';
+import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation } from '@ionic-native/google-maps'; 
+//, GoogleMapsEvent, Marker, GoogleMapsAnimation, MyLocation
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+// import { DriverProvider } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage implements OnInit {
 
   map: any;
   loading: any;
-  marker:any;
 
   constructor(
+    public navCtrl: NavController,
+    private geolocation: Geolocation,
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
     private platform: Platform) { 
+       this.platform.ready();
+       this.loadMap();
+     
   }
 
   async ngOnInit() {
-    await this.platform.ready();
-    await this.loadMap();
+    
+   
   }
+  latitude: any;
+  longitude: any;
 
   loadMap() {
-    var image = 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png';
-    
-    this.map = GoogleMaps.create('map_canvas', {
-      camera: {
-        target: {
-          lat: 6.874495,
-          lng: 79.879188
+
+    this.geolocation.getCurrentPosition().then((resp) => {
+
+       this.latitude = resp.coords.latitude;
+      this.longitude = resp.coords.longitude;
+
+      this.map = GoogleMaps.create('map', {
+        camera: {
+          target: {
+            lat: this.latitude,
+            lng: this.latitude
+          },
+          zoom: 19
         },
-        zoom: 18,
-        // tilt: 30,
-      },
-      mapType: GoogleMapsMapTypeId.ROADMAP
-    });
+        mapType: GoogleMapsMapTypeId.ROADMAP,
+      });
 
-    
-    var marker = new google.maps.Marker({ // Set the marker
-			position: new google.maps.LatLng(5.376964, 100.399383), // Position marker to coordinates
-			icon:image, //use our image as the marker
-			map: this.map, // assign the market to our map variable
-			title: 'Click here for more details' // Marker ALT Text
+      this.map.addMarker({
+        position: {lat: this.latitude, lng: this.latitude},
+        title: 'This is You!',
+        animation: GoogleMapsAnimation.BOUNCE
+      });
     });
-    
-    marker.setMap(this.map);
-    
   }
-  
 
+  centerLocation(){
+    let position = {lat: this.latitude, lng: this.latitude};
+    this.map.setCenter(position);
+    this.map.setZoom(this.map.getZoom());
+  }
+
+  
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// async function presentAlert() {
-    
-  //   const alertController = document.querySelector('ion-alert-controller');
-  //   await alertController.componentOnReady();
-  
-  //   const alert = await alertController.create({
-  //     header: 'Alert',
-  //     subHeader: 'Subtitle',
-  //     message: 'This is an alert message.',
-  //     buttons: ['OK']
-  //   });
-  //   return await alert.present();
-  // }
 
