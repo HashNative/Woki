@@ -2039,7 +2039,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n        \r\n      </ion-fab-list>\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button color=\"light\" (click)=\"centerLocation()\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n\r\n  </div>\r\n\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n        <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n            <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n            <ion-fab-list side=\"end\">\r\n              <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n              <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n              <ion-alert-controller (click)=\"presentAlert()\">\r\n                <ion-icon name=\"calendar\"></ion-icon>\r\n              </ion-alert-controller>\r\n            </ion-fab-list>\r\n            </ion-fab>\r\n      </ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n      <ion-fab-list side=\"end\">\r\n        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button> \r\n        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      </ion-fab-list>\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2115,52 +2115,96 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
-//, GoogleMapsEvent, Marker, GoogleMapsAnimation, MyLocation
 
-// import { DriverProvider } from 'protractor/built/driverProviders';
 var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, geolocation, loadingCtrl, toastCtrl, platform) {
-        this.navCtrl = navCtrl;
+    function HomePage(alertController, geolocation, platform) {
+        this.alertController = alertController;
         this.geolocation = geolocation;
-        this.loadingCtrl = loadingCtrl;
-        this.toastCtrl = toastCtrl;
         this.platform = platform;
-        this.platform.ready();
-        this.loadMap();
     }
     HomePage.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: 
+                    // await this.platform.ready();
+                    return [4 /*yield*/, this.loadMap()];
+                    case 1:
+                        // await this.platform.ready();
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    //loadMap()
+    HomePage.prototype.loadMap = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var lat, lng;
+            var _this = this;
+            return __generator(this, function (_a) {
+                this.geolocation.getCurrentPosition().then(function (position) {
+                    lat = position.coords.latitude;
+                    lng = position.coords.longitude;
+                    var mapOptions = {
+                        camera: {
+                            target: {
+                                lat: lat,
+                                lng: lng
+                            },
+                            zoom: 18
+                        },
+                        mapType: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsMapTypeId"].ROADMAP
+                    };
+                    _this.map = _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMaps"].create('map', mapOptions);
+                    _this.map.addMarkerSync({
+                        title: 'Ionic',
+                        icon: 'green',
+                        animation: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsAnimation"].BOUNCE,
+                        position: {
+                            lat: lat,
+                            lng: lng
+                        }
+                    });
+                });
                 return [2 /*return*/];
             });
         });
     };
-    HomePage.prototype.loadMap = function () {
-        var _this = this;
-        this.geolocation.getCurrentPosition().then(function (resp) {
-            _this.latitude = resp.coords.latitude;
-            _this.longitude = resp.coords.longitude;
-            _this.map = _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMaps"].create('map', {
-                camera: {
-                    target: {
-                        lat: _this.latitude,
-                        lng: _this.latitude
-                    },
-                    zoom: 19
-                },
-                mapType: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsMapTypeId"].ROADMAP,
-            });
-            _this.map.addMarker({
-                position: { lat: _this.latitude, lng: _this.latitude },
-                title: 'This is You!',
-                animation: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsAnimation"].BOUNCE
+    //loadMap()
+    //showAlert3()
+    HomePage.prototype.showAlert3 = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var alert;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.alertController.create({
+                            header: 'Alert',
+                            subHeader: 'Subtitle',
+                            message: 'This is an alert message.',
+                            buttons: [
+                                {
+                                    text: 'Home',
+                                    role: 'home'
+                                },
+                                {
+                                    text: 'Cancel',
+                                    role: 'cancel'
+                                },
+                                {
+                                    text: 'OK',
+                                    role: 'ok'
+                                }
+                            ],
+                            animated: true
+                        })];
+                    case 1:
+                        alert = _a.sent();
+                        return [4 /*yield*/, alert.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
             });
         });
-    };
-    HomePage.prototype.centerLocation = function () {
-        var position = { lat: this.latitude, lng: this.latitude };
-        this.map.setCenter(position);
-        this.map.setZoom(this.map.getZoom());
     };
     HomePage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -2168,15 +2212,98 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        __metadata("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_1__["NavController"],
+        __metadata("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_1__["AlertController"],
             _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__["Geolocation"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["LoadingController"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ToastController"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["Platform"]])
     ], HomePage);
     return HomePage;
 }());
 
+// async showAlert1() {
+//   const alert = await this.alertController.create({
+//     header: 'Prompt!',
+//     inputs: [
+//       {
+//         name: 'name1',
+//         type: 'text',
+//         placeholder: 'Placeholder 1'
+//       },
+//       {
+//         name: 'name2',
+//         type: 'text',
+//         id: 'name2-id',
+//         value: 'hello',
+//         placeholder: 'Placeholder 2'
+//       },
+//       {
+//         name: 'name3',
+//         value: 'http://ionicframework.com',
+//         type: 'url',
+//         placeholder: 'Favorite site ever'
+//       },
+//       // input date with min & max
+//       {
+//         name: 'name4',
+//         type: 'date',
+//         min: '2017-03-01',
+//         max: '2018-10-12'
+//       },
+//       // input date without min nor max
+//       {
+//         name: 'name5',
+//         type: 'date'
+//       },
+//       {
+//         name: 'name6',
+//         type: 'number',
+//         min: -5,
+//         max: 10
+//       },
+//       {
+//         name: 'name7',
+//         type: 'number'
+//       }
+//     ],
+//     buttons: [
+//       {
+//         text: 'Cancel',
+//         role: 'cancel',
+//         cssClass: 'secondary',
+//         handler: () => {
+//           console.log('Confirm Cancel');
+//         }
+//       }, {
+//         text: 'Ok',
+//         handler: () => {
+//           console.log('Confirm Ok');
+//         }
+//       }
+//     ]
+//   });
+//   await alert.present();
+// }
+// async showAlert2() {
+//   const alert = await this.alertController.create({
+//     header: 'Confirm!',
+//     message: 'Message <strong>text</strong>!!!',
+//     buttons: [
+//       {
+//         text: 'Cancel',
+//         role: 'cancel',
+//         cssClass: 'secondary',
+//         handler: (blah) => {
+//           console.log('Confirm Cancel: blah');
+//         }
+//       }, {
+//         text: 'Okay',
+//         handler: () => {
+//           console.log('Confirm Okay');
+//         }
+//       }
+//     ]
+//   });
+//   await alert.present();
+// }
 
 
 /***/ })
