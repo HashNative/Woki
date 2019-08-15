@@ -839,7 +839,13 @@ module.exports = webpackAsyncContext;
 var map = {
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
+		"common",
 		"home-home-module"
+	],
+	"./search-modal/search-modal.module": [
+		"./src/app/search-modal/search-modal.module.ts",
+		"common",
+		"search-modal-search-modal-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -851,7 +857,7 @@ function webpackAsyncContext(req) {
 			throw e;
 		});
 	}
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		var id = ids[0];
 		return __webpack_require__(id);
 	});
@@ -887,6 +893,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+    { path: 'search-modal', loadChildren: './search-modal/search-modal.module#SearchModalPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1092,7 +1099,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Lahiru\Desktop\Woki\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Woki\src\main.ts */"./src/main.ts");
 
 
 /***/ })

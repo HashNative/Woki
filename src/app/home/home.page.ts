@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController, Platform } from '@ionic/angular';
+import { AlertController, Platform, ModalController } from '@ionic/angular';
 import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions } from '@ionic-native/google-maps'; 
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { SearchModalPage } from '../search-modal/search-modal.page';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +10,18 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
   styleUrls: ['home.page.scss'],
 })
 
+
 export class HomePage implements OnInit {
 
   map: GoogleMap;
+  lat: any;
+  lng: any;
 
   constructor(
     private alertController: AlertController,
     private geolocation: Geolocation,
-    private platform: Platform) { 
+    private platform: Platform,
+    private modal: ModalController) {
   }
 
   async ngOnInit() {
@@ -26,16 +31,14 @@ export class HomePage implements OnInit {
 
   //loadMap()
   async loadMap() {
-    let lat: any;
-    let lng: any;
     this.geolocation.getCurrentPosition().then((position) => {
-      lat = position.coords.latitude;
-      lng = position.coords.longitude;
+      this.lat = position.coords.latitude;
+      this.lng = position.coords.longitude;
       let mapOptions: GoogleMapOptions = {
         camera: {
           target: {
-            lat: lat,
-            lng: lng
+            lat: this.lat,
+            lng: this.lng
           },
           zoom: 18
         },
@@ -44,17 +47,16 @@ export class HomePage implements OnInit {
       this.map = GoogleMaps.create('map', mapOptions);
       this.map.addMarkerSync({
         title: 'Ionic',
-        icon: 'green',
         animation: GoogleMapsAnimation.BOUNCE,
         position: {
-          lat: lat,
-          lng: lng
+          lat: this.lat,
+          lng: this.lng
         }
       });
     });
   }
   //loadMap()
-  
+
 
   //showAlert3()
   async showAlert3() {
@@ -82,6 +84,21 @@ export class HomePage implements OnInit {
   }
   // showAlert3()
 
+  async centerLocation() {
+    let GOOGLE = {
+      lat: this.lat,
+      lng: this.lng
+    };
+    this.map.setCameraTarget(GOOGLE);
+  }
+
+  async searchModal() {
+
+    const modal = await this.modal.create({
+      component: SearchModalPage
+    });
+    return await modal.present();
+  }
 }
 
 
