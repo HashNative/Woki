@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone, ViewChild, ElementRef } from '@angular/core';
 import { AlertController, Platform, ModalController } from '@ionic/angular';
 import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions } from '@ionic-native/google-maps'; 
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SearchModalPage } from '../search-modal/search-modal.page';
 
+declare var google;
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -13,52 +14,76 @@ import { SearchModalPage } from '../search-modal/search-modal.page';
 
 export class HomePage implements OnInit {
 
-  map: GoogleMap;
-  lat: any;
-  lng: any;
+  public map: GoogleMap;
+  public lat: any;
+  public lng: any;
+  public speed = '0';
+  public marker: any;
+  public watch: any;
 
   constructor(
     private alertController: AlertController,
     private geolocation: Geolocation,
     private platform: Platform,
-    private modal: ModalController) {
+    private modal: ModalController,
+    public zone: NgZone) {
   }
 
   async ngOnInit() {
-    await this.platform.ready();
-    await this.loadMap();
-  }
-
-  //loadMap()
-  async loadMap() {
-    this.geolocation.getCurrentPosition().then((position) => {
-      this.lat = position.coords.latitude;
-      this.lng = position.coords.longitude;
-      let mapOptions: GoogleMapOptions = {
-        camera: {
-          target: {
-            lat: this.lat,
-            lng: this.lng
-          },
-          zoom: 18
-        },
-        mapType: GoogleMapsMapTypeId.ROADMAP
-      }
-      this.map = GoogleMaps.create('map', mapOptions);
-      this.map.addMarkerSync({
-        title: 'Ionic',
-        animation: GoogleMapsAnimation.BOUNCE,
-        position: {
-          lat: this.lat,
-          lng: this.lng
-        }
-      });
+    this.platform.ready().then(() => {
+        this.loadMap();
+        this.startTracking();
     });
   }
-  //loadMap()
 
+  // loadMap() {
+  //
+  //   this.geolocation.getCurrentPosition().then((position) => {
+  //     this.lat = position.coords.latitude;
+  //     this.lng = position.coords.longitude;
+  //     let mapOptions: GoogleMapOptions = {
+  //       camera: {
+  //         target: {
+  //           lat: this.lat,
+  //           lng: this.lng
+  //         },
+  //         zoom: 18
+  //       },
+  //       mapType: GoogleMapsMapTypeId.ROADMAP
+  //     }
+  //     this.map = GoogleMaps.create('map', mapOptions);
+  //     let marker = this.map.addMarkerSync({
+  //       title: 'Ionic',
+  //       animation: GoogleMapsAnimation.BOUNCE,
+  //       position: {
+  //         lat: this.lat,
+  //         lng: this.lng
+  //       }
+  //     });
+  //     this.marker.push(marker);
+  //   });
+  // }
+  loadMap() {
+    this.geolocation.getCurrentPosition().then((position) => {
+          this.lat = position.coords.latitude;
+          this.lng = position.coords.longitude;
+          let mapOptions: GoogleMapOptions = {
+            camera: {
+              target: {
+                lat: this.lat,
+                lng: this.lng
+              },
+              zoom: 18
+            },
+            mapType: GoogleMapsMapTypeId.ROADMAP
+          }
+          this.map = GoogleMaps.create('map', mapOptions);
+      this.addMarker();
+    }, (err) => {
+      console.log(err);
+    });
+  }
 
-  //showAlert3()
   async showAlert3() {
     const alert = await this.alertController.create({
       header: 'Alert',
@@ -82,16 +107,32 @@ export class HomePage implements OnInit {
     });
     return await alert.present();
   }
-  // showAlert3()
-
-  async centerLocation() {
-    let GOOGLE = {
+  async centerLocation(lat = null, lng = null) {
+    let location = {
       lat: this.lat,
       lng: this.lng
     };
-    this.map.setCameraTarget(GOOGLE);
-  }
 
+    if (lat && lng) {
+      location = {
+        lat: lat,
+        lng: lng
+      };
+    }
+    this.map.setCameraTarget(location);
+  }
+  async placeMarker() {
+
+    let sets = this.map.addMarkerSync({
+      title: 'Ionic',
+      animation: GoogleMapsAnimation.BOUNCE,
+      position: {
+        lat: 43.0741904,
+        lng: -89.3809802
+      }
+    });
+    console.log(sets.getId());
+  }
   async searchModal() {
 
     const modal = await this.modal.create({
@@ -99,6 +140,65 @@ export class HomePage implements OnInit {
     });
     return await modal.present();
   }
+
+
+  startTracking() {
+    let options = {
+      frequency: 500,
+      enableHighAccuracy: true
+    };
+    this.watch = this.geolocation.watchPosition(options).subscribe((position) => {
+      this.zone.run(() => {
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+        this.marker.setPosition( { lat: this.lat, lng: this.lng });
+        this.centerLocation(this.lat, this.lng);
+        this.speed = ( +position.coords.speed * 3.6 ) + 'Km/h';
+      });
+
+    });
+
+  }
+
+  async addMarker() {
+
+        this.marker = this.map.addMarkerSync({
+          title: 'Ionic',
+          animation: GoogleMapsAnimation.BOUNCE,
+          position: {
+            lat: this.lat,
+            lng: this.lng
+          }
+        });
+
+  }
+
+
+  async showAlert4() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Subtitle',
+      message: this.lat,
+      buttons: [
+        {
+          text: 'Home',
+          role: 'home'
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'OK',
+          role: 'ok'
+        }
+      ],
+      animated: true
+    });
+    return await alert.present();
+  }
+
+
 }
 
 
