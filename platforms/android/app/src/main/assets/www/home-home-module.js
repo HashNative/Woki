@@ -2072,6 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/google-maps */ "./node_modules/@ionic-native/google-maps/index.js");
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
 /* harmony import */ var _search_modal_search_modal_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search-modal/search-modal.page */ "./src/app/search-modal/search-modal.page.ts");
+/* harmony import */ var _ionic_native_geofence_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/geofence/ngx */ "./node_modules/@ionic-native/geofence/ngx/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2121,14 +2122,19 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(alertController, geolocation, platform, modal, zone) {
+    function HomePage(alertController, geolocation, platform, modal, zone, geofence) {
         this.alertController = alertController;
         this.geolocation = geolocation;
         this.platform = platform;
         this.modal = modal;
         this.zone = zone;
+        this.geofence = geofence;
         this.speed = '0';
+        geofence.initialize().then(
+        // resolved promise does not return a value
+        function () { return console.log('Geofence Plugin Ready'); }, function (err) { return console.log(err); });
     }
     HomePage.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -2376,7 +2382,8 @@ var HomePage = /** @class */ (function () {
             _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__["Geolocation"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["Platform"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ModalController"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]])
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"],
+            _ionic_native_geofence_ngx__WEBPACK_IMPORTED_MODULE_5__["Geofence"]])
     ], HomePage);
     return HomePage;
 }());

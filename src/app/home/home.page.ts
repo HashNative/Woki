@@ -1,8 +1,10 @@
 import { Component, OnInit, NgZone, ViewChild, ElementRef } from '@angular/core';
 import { AlertController, Platform, ModalController } from '@ionic/angular';
-import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions, CircleOptions, Circle } from '@ionic-native/google-maps';
+import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation,
+         Marker, GoogleMapOptions, CircleOptions, Circle } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SearchModalPage } from '../search-modal/search-modal.page';
+import { Geofence } from '@ionic-native/geofence/ngx';
 
 declare var google;
 @Component({
@@ -27,7 +29,13 @@ export class HomePage implements OnInit {
       private geolocation: Geolocation,
       private platform: Platform,
       private modal: ModalController,
-      public zone: NgZone) {
+      public zone: NgZone,
+      private geofence: Geofence) {
+    geofence.initialize().then(
+        // resolved promise does not return a value
+        () => console.log('Geofence Plugin Ready'),
+        (err) => console.log(err)
+    );
   }
 
   async ngOnInit() {
@@ -37,33 +45,6 @@ export class HomePage implements OnInit {
     });
   }
 
-  // loadMap() {
-  //
-  //   this.geolocation.getCurrentPosition().then((position) => {
-  //     this.lat = position.coords.latitude;
-  //     this.lng = position.coords.longitude;
-  //     let mapOptions: GoogleMapOptions = {
-  //       camera: {
-  //         target: {
-  //           lat: this.lat,
-  //           lng: this.lng
-  //         },
-  //         zoom: 18
-  //       },
-  //       mapType: GoogleMapsMapTypeId.ROADMAP
-  //     }
-  //     this.map = GoogleMaps.create('map', mapOptions);
-  //     let marker = this.map.addMarkerSync({
-  //       title: 'Ionic',
-  //       animation: GoogleMapsAnimation.BOUNCE,
-  //       position: {
-  //         lat: this.lat,
-  //         lng: this.lng
-  //       }
-  //     });
-  //     this.marker.push(marker);
-  //   });
-  // }
   loadMap() {
     this.geolocation.getCurrentPosition().then((position) => {
       this.lat = position.coords.latitude;
@@ -79,6 +60,19 @@ export class HomePage implements OnInit {
         mapType: GoogleMapsMapTypeId.ROADMAP
       }
       this.map = GoogleMaps.create('map', mapOptions);
+      // let service = new google.maps.places.PlacesService(this.map);
+      // service.nearbySearch({
+      //   location: {lat: this.lat, lng: this.lng},
+      //   radius: 100,
+      //   type: ['restaurant']
+      // }, (results, status) => {
+      //   if (status === google.maps.places.PlacesServiceStatus.OK) {
+      //     for (var i = 0; i < results.length; i++) {
+      //       console.log(results[i].name);
+      //       this.addGeofence(results[i].id, i + 1, results[i].geometry.location.lat(), results[i].geometry.location.lng(), results[i].name, results[i].vicinity);
+      //     }
+      //   }
+      // });
       this.addMarker();
     }, (err) => {
       console.log(err);
@@ -120,7 +114,19 @@ export class HomePage implements OnInit {
         lng: lng
       };
     }
-    this.map.setCameraTarget(location);
+    // this.map.setCameraTarget(location);
+
+    this.map.animateCamera({
+      target: location,
+      zoom: 18,
+      bearing: 140,
+      duration: 5000,
+      padding: 0  // default = 20px
+    }).then(() => {
+
+    });
+
+
   }
   async placeMarker() {
 
@@ -210,6 +216,39 @@ export class HomePage implements OnInit {
         this.circle = circle;
     });
   }
+
+
+
+  // Geo fence
+
+  private addGeofence(id, idx, lat, lng, place, desc) {
+    let fence = {
+      id: id,
+      latitude: lat,
+      longitude: lng,
+      radius: 50,
+      transitionType: 3,
+      notification: {
+        id: idx,
+        title: 'You crossed ' + place,
+        text: desc,
+        openAppOnClick: true
+      }
+    }
+
+    this.geofence.addOrUpdate(fence).then(
+        () => console.log('Geofence added'),
+        (err) => console.log('Geofence failed to add')
+    );
+  }
+
+  private removeAllGeofence() {
+    this.geofence.removeAll();
+  }
+
+
+
+
 
 }
 

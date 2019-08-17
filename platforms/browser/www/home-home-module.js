@@ -2072,6 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/google-maps */ "./node_modules/@ionic-native/google-maps/index.js");
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
 /* harmony import */ var _search_modal_search_modal_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search-modal/search-modal.page */ "./src/app/search-modal/search-modal.page.ts");
+/* harmony import */ var _ionic_native_geofence_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/geofence/ngx */ "./node_modules/@ionic-native/geofence/ngx/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2121,14 +2122,19 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(alertController, geolocation, platform, modal, zone) {
+    function HomePage(alertController, geolocation, platform, modal, zone, geofence) {
         this.alertController = alertController;
         this.geolocation = geolocation;
         this.platform = platform;
         this.modal = modal;
         this.zone = zone;
+        this.geofence = geofence;
         this.speed = '0';
+        geofence.initialize().then(
+        // resolved promise does not return a value
+        function () { return console.log('Geofence Plugin Ready'); }, function (err) { return console.log(err); });
     }
     HomePage.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -2142,33 +2148,6 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
-    // loadMap() {
-    //
-    //   this.geolocation.getCurrentPosition().then((position) => {
-    //     this.lat = position.coords.latitude;
-    //     this.lng = position.coords.longitude;
-    //     let mapOptions: GoogleMapOptions = {
-    //       camera: {
-    //         target: {
-    //           lat: this.lat,
-    //           lng: this.lng
-    //         },
-    //         zoom: 18
-    //       },
-    //       mapType: GoogleMapsMapTypeId.ROADMAP
-    //     }
-    //     this.map = GoogleMaps.create('map', mapOptions);
-    //     let marker = this.map.addMarkerSync({
-    //       title: 'Ionic',
-    //       animation: GoogleMapsAnimation.BOUNCE,
-    //       position: {
-    //         lat: this.lat,
-    //         lng: this.lng
-    //       }
-    //     });
-    //     this.marker.push(marker);
-    //   });
-    // }
     HomePage.prototype.loadMap = function () {
         var _this = this;
         this.geolocation.getCurrentPosition().then(function (position) {
@@ -2185,6 +2164,19 @@ var HomePage = /** @class */ (function () {
                 mapType: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMapsMapTypeId"].ROADMAP
             };
             _this.map = _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__["GoogleMaps"].create('map', mapOptions);
+            // let service = new google.maps.places.PlacesService(this.map);
+            // service.nearbySearch({
+            //   location: {lat: this.lat, lng: this.lng},
+            //   radius: 100,
+            //   type: ['restaurant']
+            // }, (results, status) => {
+            //   if (status === google.maps.places.PlacesServiceStatus.OK) {
+            //     for (var i = 0; i < results.length; i++) {
+            //       console.log(results[i].name);
+            //       this.addGeofence(results[i].id, i + 1, results[i].geometry.location.lat(), results[i].geometry.location.lng(), results[i].name, results[i].vicinity);
+            //     }
+            //   }
+            // });
             _this.addMarker();
         }, function (err) {
             console.log(err);
@@ -2239,7 +2231,15 @@ var HomePage = /** @class */ (function () {
                         lng: lng
                     };
                 }
-                this.map.setCameraTarget(location);
+                // this.map.setCameraTarget(location);
+                this.map.animateCamera({
+                    target: location,
+                    zoom: 18,
+                    bearing: 140,
+                    duration: 5000,
+                    padding: 0 // default = 20px
+                }).then(function () {
+                });
                 return [2 /*return*/];
             });
         });
@@ -2288,7 +2288,7 @@ var HomePage = /** @class */ (function () {
                 _this.lat = position.coords.latitude;
                 _this.lng = position.coords.longitude;
                 _this.marker.setPosition({ lat: _this.lat, lng: _this.lng });
-                _this.centerLocation(_this.lat, _this.lng);
+                // this.centerLocation(this.lat, this.lng);
                 _this.speed = (+position.coords.speed * 3.6) + 'Km/h';
                 if (_this.circle) {
                     _this.addCircle();
@@ -2366,6 +2366,26 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
+    // Geo fence
+    HomePage.prototype.addGeofence = function (id, idx, lat, lng, place, desc) {
+        var fence = {
+            id: id,
+            latitude: lat,
+            longitude: lng,
+            radius: 50,
+            transitionType: 3,
+            notification: {
+                id: idx,
+                title: 'You crossed ' + place,
+                text: desc,
+                openAppOnClick: true
+            }
+        };
+        this.geofence.addOrUpdate(fence).then(function () { return console.log('Geofence added'); }, function (err) { return console.log('Geofence failed to add'); });
+    };
+    HomePage.prototype.removeAllGeofence = function () {
+        this.geofence.removeAll();
+    };
     HomePage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
@@ -2376,7 +2396,8 @@ var HomePage = /** @class */ (function () {
             _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__["Geolocation"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["Platform"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ModalController"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]])
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"],
+            _ionic_native_geofence_ngx__WEBPACK_IMPORTED_MODULE_5__["Geofence"]])
     ], HomePage);
     return HomePage;
 }());
