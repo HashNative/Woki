@@ -2244,7 +2244,7 @@ var HomePage = /** @class */ (function () {
                     target: location,
                     zoom: 18,
                     bearing: 140,
-                    duration: 5000,
+                    duration: 1500,
                     padding: 0 // default = 20px
                 }).then(function () {
                 });
@@ -2296,8 +2296,11 @@ var HomePage = /** @class */ (function () {
                 _this.lat = position.coords.latitude;
                 _this.lng = position.coords.longitude;
                 _this.marker.setPosition({ lat: _this.lat, lng: _this.lng });
-                _this.centerLocation(_this.lat, _this.lng);
+                // this.centerLocation(this.lat, this.lng);
                 _this.speed = (+position.coords.speed * 3.6) + 'Km/h';
+                if (_this.circle) {
+                    _this.addCircle();
+                }
             });
         });
     };

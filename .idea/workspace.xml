@@ -1,7 +1,420 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52e8de91-0186-4cc8-ab8d-a226ef5fadbe" name="Default Changelist" comment="" />
+    <list default="true" id="4748aa5a-d9ef-4882-afc9-2cabf3d59048" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/10.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/100.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/101.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/101.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/102.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/102.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/103.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/103.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/104.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/104.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/105.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/105.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/106.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/106.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/107.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/107.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/108.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/108.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/109.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/109.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/11.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/110.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/110.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/111.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/111.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/112.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/112.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/113.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/113.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/114.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/114.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/115.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/115.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/116.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/116.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/117.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/117.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/118.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/118.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/119.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/119.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/12.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/120.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/120.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/121.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/121.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/122.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/122.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/123.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/123.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/124.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/124.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/125.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/125.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/126.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/126.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/127.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/127.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/128.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/128.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/129.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/129.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/13.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/130.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/130.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/131.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/131.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/132.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/132.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/133.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/133.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/134.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/134.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/135.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/135.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/136.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/136.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/137.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/137.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/138.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/138.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/139.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/139.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/14.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/140.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/140.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/141.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/141.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/142.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/142.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/143.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/143.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/144.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/144.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/145.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/145.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/146.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/146.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/147.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/147.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/148.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/148.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/149.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/149.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/15.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/150.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/150.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/151.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/151.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/152.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/153.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/153.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/154.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/154.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/155.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/155.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/156.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/156.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/157.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/157.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/158.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/158.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/159.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/159.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/16.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/160.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/160.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/161.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/161.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/162.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/162.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/163.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/163.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/164.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/164.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/165.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/165.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/166.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/166.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/167.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/167.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/168.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/168.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/169.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/169.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/17.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/17.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/170.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/170.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/171.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/171.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/172.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/172.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/18.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/18.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/19.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/19.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/20.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/20.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/21.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/22.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/22.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/23.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/23.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/24.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/24.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/25.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/25.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/26.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/26.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/27.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/27.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/28.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/28.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/29.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/29.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/30.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/30.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/31.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/31.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/32.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/32.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/33.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/33.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/34.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/34.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/35.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/35.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/36.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/36.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/37.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/37.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/38.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/38.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/39.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/39.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/40.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/40.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/41.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/41.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/42.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/42.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/43.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/43.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/44.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/44.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/45.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/45.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/46.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/46.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/47.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/47.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/48.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/48.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/49.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/49.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/50.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/50.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/51.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/51.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/52.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/52.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/53.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/53.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/54.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/54.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/55.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/55.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/56.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/56.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/57.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/57.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/58.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/58.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/59.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/59.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/60.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/60.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/61.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/61.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/62.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/62.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/63.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/63.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/64.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/64.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/65.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/65.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/66.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/66.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/67.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/67.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/68.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/68.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/69.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/69.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/70.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/70.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/71.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/71.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/72.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/72.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/73.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/73.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/74.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/74.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/75.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/75.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/76.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/76.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/77.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/77.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/78.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/78.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/79.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/79.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/80.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/80.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/81.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/81.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/82.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/82.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/83.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/83.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/84.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/84.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/85.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/85.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/86.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/86.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/87.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/87.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/88.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/88.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/89.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/89.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/9.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/90.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/90.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/91.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/91.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/92.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/92.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/93.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/93.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/94.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/94.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/95.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/95.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/96.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/96.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/97.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/97.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/98.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/98.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/99.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/99.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/home-home-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/home-home-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/home-home-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/home-home-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/polyfills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/search-modal-search-modal-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/search-modal-search-modal-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/10.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/100.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/101.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/101.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/102.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/102.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/103.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/103.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/104.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/104.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/105.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/105.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/106.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/106.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/107.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/107.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/108.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/108.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/109.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/109.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/11.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/110.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/110.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/111.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/111.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/112.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/112.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/113.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/113.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/114.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/114.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/115.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/115.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/116.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/116.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/117.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/117.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/118.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/118.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/119.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/119.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/12.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/120.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/120.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/121.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/121.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/122.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/122.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/123.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/123.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/124.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/124.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/125.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/125.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/126.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/126.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/127.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/127.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/128.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/128.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/129.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/129.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/13.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/130.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/130.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/131.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/131.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/132.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/132.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/133.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/133.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/134.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/134.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/135.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/135.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/136.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/136.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/137.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/137.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/138.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/138.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/139.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/139.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/14.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/140.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/140.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/141.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/141.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/142.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/142.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/143.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/143.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/144.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/144.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/145.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/145.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/146.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/146.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/147.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/147.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/148.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/148.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/149.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/149.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/15.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/150.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/150.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/151.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/151.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/152.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/153.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/153.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/154.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/154.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/155.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/155.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/156.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/156.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/157.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/157.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/158.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/158.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/159.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/159.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/16.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/160.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/160.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/161.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/161.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/162.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/162.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/163.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/163.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/164.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/164.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/165.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/165.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/166.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/166.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/167.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/167.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/168.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/168.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/169.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/169.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/17.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/17.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/170.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/170.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/171.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/171.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/172.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/172.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/18.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/18.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/19.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/19.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/20.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/20.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/21.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/22.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/22.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/23.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/23.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/24.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/24.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/25.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/25.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/26.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/26.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/27.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/27.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/28.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/28.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/29.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/29.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/30.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/30.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/31.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/31.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/32.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/32.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/33.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/33.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/34.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/34.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/35.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/35.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/36.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/36.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/37.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/37.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/38.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/38.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/39.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/39.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/40.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/40.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/41.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/41.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/42.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/42.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/43.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/43.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/44.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/44.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/45.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/45.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/46.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/46.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/47.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/47.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/48.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/48.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/49.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/49.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/50.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/50.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/51.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/51.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/52.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/52.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/53.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/53.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/54.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/54.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/55.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/55.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/56.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/56.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/57.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/57.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/58.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/58.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/59.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/59.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/60.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/60.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/61.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/61.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/62.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/62.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/63.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/63.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/64.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/64.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/65.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/65.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/66.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/66.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/67.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/67.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/68.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/68.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/69.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/69.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/70.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/70.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/71.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/71.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/72.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/72.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/73.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/73.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/74.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/74.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/75.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/75.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/76.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/76.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/77.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/77.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/78.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/78.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/79.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/79.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/80.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/80.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/81.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/81.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/82.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/82.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/83.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/83.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/84.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/84.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/85.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/85.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/86.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/86.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/87.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/87.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/88.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/88.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/89.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/89.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/9.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/90.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/90.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/91.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/91.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/92.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/92.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/93.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/93.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/94.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/94.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/95.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/95.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/96.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/96.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/97.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/97.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/98.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/98.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/99.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/99.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/exec.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova-js-src/exec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/platform.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova-js-src/platform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/cordova.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/cordova.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/home-home-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-home-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-device/www/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-device/www/device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/BaseArrayClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/BaseArrayClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/BaseClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/BaseClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/CameraPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/CameraPosition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Cluster.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Cluster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Environment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Geocoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Geocoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/GroundOverlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/GroundOverlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/HtmlInfoWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/HtmlInfoWindow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/InlineWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/InlineWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/KmlLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/KmlLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/KmlOverlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/KmlOverlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LatLng.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LatLng.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LatLngBounds.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LatLngBounds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Location.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LocationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/LocationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/MapTypeId.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/MapTypeId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Marker.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Marker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/MarkerCluster.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/MarkerCluster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Overlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Overlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Polygon.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Polygon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Polyline.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Polyline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Promise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/StreetViewPanorama.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/StreetViewPanorama.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Thread.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/Thread.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/TileOverlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/TileOverlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/VisibleRegion.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/VisibleRegion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/commandQueueExecutor.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/commandQueueExecutor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/encoding.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/encoding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/geomodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/geomodel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/pluginInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/pluginInit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/poly.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/poly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/spherical.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-googlemaps/www/spherical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-webview/src/www/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-webview/src/www/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-statusbar/www/statusbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/search-modal-search-modal-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/search-modal-search-modal-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,12 +430,12 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.page.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="-493">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#81#0" expanded="true" />
               </folding>
@@ -34,7 +447,7 @@
         <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -45,7 +458,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ilham" />
       </map>
     </option>
   </component>
@@ -146,13 +559,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3838000" />
+    <option name="totallyTimeSpent" value="4316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,7 +578,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4091653" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2487725" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -185,20 +597,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="-493">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#81#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
