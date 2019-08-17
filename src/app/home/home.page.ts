@@ -1,6 +1,6 @@
 import { Component, OnInit, NgZone, ViewChild, ElementRef } from '@angular/core';
 import { AlertController, Platform, ModalController } from '@ionic/angular';
-import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions } from '@ionic-native/google-maps'; 
+import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions, CircleOptions, Circle } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SearchModalPage } from '../search-modal/search-modal.page';
 
@@ -20,6 +20,7 @@ export class HomePage implements OnInit {
   public speed = '0';
   public marker: any;
   public watch: any;
+  circle: Circle;
 
   constructor(
     private alertController: AlertController,
@@ -119,7 +120,16 @@ export class HomePage implements OnInit {
         lng: lng
       };
     }
-    this.map.setCameraTarget(location);
+    // this.map.setCameraTarget(location);
+    this.map.animateCamera({
+      target: location,
+      zoom: 18,
+      bearing: 140,
+      duration: 1500,
+      padding: 0  // default = 20px
+    }).then(() => {
+
+    });
   }
   async placeMarker() {
 
@@ -152,8 +162,11 @@ export class HomePage implements OnInit {
         this.lat = position.coords.latitude;
         this.lng = position.coords.longitude;
         this.marker.setPosition( { lat: this.lat, lng: this.lng });
-        this.centerLocation(this.lat, this.lng);
+        // this.centerLocation(this.lat, this.lng);
         this.speed = ( +position.coords.speed * 3.6 ) + 'Km/h';
+        if (this.circle) {
+          this.addCircle();
+        }
       });
 
     });
@@ -172,7 +185,6 @@ export class HomePage implements OnInit {
         });
 
   }
-
 
   async showAlert4() {
     const alert = await this.alertController.create({
@@ -198,6 +210,20 @@ export class HomePage implements OnInit {
     return await alert.present();
   }
 
+  async addCircle() {
+    if (this.circle) {this.circle.remove(); }
+    let options: CircleOptions = {
+      'center': {'lat' : this.lat, 'lng' : this.lng},
+      'radius': 300,
+      'strokeColor' : '#528BE2',
+      'strokeWidth': 1,
+      'fillColor' : '#d5e2ff'
+    };
+
+    this.map.addCircle(options).then((circle: Circle) => {
+      this.circle = circle;
+    });
+  }
 
 }
 

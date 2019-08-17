@@ -2042,7 +2042,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"addMarker()\">Search</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"addCircle()\">Search</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2053,7 +2053,7 @@ module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"ligh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map {\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9EOlxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXAge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4gICJdfQ== */"
+module.exports = "#map {\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXElsaGFtIFNhZmVla1xcRGVza3RvcFxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXAge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4gICJdfQ== */"
 
 /***/ }),
 
@@ -2239,7 +2239,15 @@ var HomePage = /** @class */ (function () {
                         lng: lng
                     };
                 }
-                this.map.setCameraTarget(location);
+                // this.map.setCameraTarget(location);
+                this.map.animateCamera({
+                    target: location,
+                    zoom: 18,
+                    bearing: 140,
+                    duration: 1500,
+                    padding: 0 // default = 20px
+                }).then(function () {
+                });
                 return [2 /*return*/];
             });
         });
@@ -2279,13 +2287,6 @@ var HomePage = /** @class */ (function () {
     };
     HomePage.prototype.startTracking = function () {
         var _this = this;
-        var config = {
-            desiredAccuracy: 0,
-            stationaryRadius: 20,
-            distanceFilter: 10,
-            debug: true,
-            interval: 2000
-        };
         var options = {
             frequency: 500,
             enableHighAccuracy: true
@@ -2295,8 +2296,11 @@ var HomePage = /** @class */ (function () {
                 _this.lat = position.coords.latitude;
                 _this.lng = position.coords.longitude;
                 _this.marker.setPosition({ lat: _this.lat, lng: _this.lng });
-                _this.centerLocation(_this.lat, _this.lng);
+                // this.centerLocation(this.lat, this.lng);
                 _this.speed = (+position.coords.speed * 3.6) + 'Km/h';
+                if (_this.circle) {
+                    _this.addCircle();
+                }
             });
         });
     };
@@ -2345,6 +2349,28 @@ var HomePage = /** @class */ (function () {
                         return [4 /*yield*/, alert.present()];
                     case 2: return [2 /*return*/, _a.sent()];
                 }
+            });
+        });
+    };
+    HomePage.prototype.addCircle = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var options;
+            var _this = this;
+            return __generator(this, function (_a) {
+                if (this.circle) {
+                    this.circle.remove();
+                }
+                options = {
+                    'center': { 'lat': this.lat, 'lng': this.lng },
+                    'radius': 300,
+                    'strokeColor': '#528BE2',
+                    'strokeWidth': 1,
+                    'fillColor': '#d5e2ff'
+                };
+                this.map.addCircle(options).then(function (circle) {
+                    _this.circle = circle;
+                });
+                return [2 /*return*/];
             });
         });
     };
