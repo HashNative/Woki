@@ -3,6 +3,8 @@ import { AlertController, Platform, ModalController } from '@ionic/angular';
 import { GoogleMaps, GoogleMap, GoogleMapsMapTypeId, GoogleMapsAnimation, Marker, GoogleMapOptions, CircleOptions, Circle } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SearchModalPage } from '../search-modal/search-modal.page';
+import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import { ToastController } from '@ionic/angular';
 
 declare var google;
 @Component({
@@ -21,13 +23,16 @@ export class HomePage implements OnInit {
   public marker: any;
   public watch: any;
   circle: Circle;
+  public restaurant = 'resources/img/restaurant.png';
 
   constructor(
     private alertController: AlertController,
     private geolocation: Geolocation,
     private platform: Platform,
     private modal: ModalController,
-    public zone: NgZone) {
+    public zone: NgZone,
+    private localNotifications: LocalNotifications,
+    public toastController: ToastController) {
   }
 
   async ngOnInit() {
@@ -150,8 +155,6 @@ export class HomePage implements OnInit {
     });
     return await modal.present();
   }
-
-
   startTracking() {
     let options = {
       frequency: 500,
@@ -172,7 +175,6 @@ export class HomePage implements OnInit {
     });
 
   }
-
   async addMarker() {
 
         this.marker = this.map.addMarkerSync({
@@ -185,7 +187,6 @@ export class HomePage implements OnInit {
         });
 
   }
-
   async showAlert4() {
     const alert = await this.alertController.create({
       header: 'Alert',
@@ -209,13 +210,12 @@ export class HomePage implements OnInit {
     });
     return await alert.present();
   }
-
   async addCircle() {
     if (this.circle) {this.circle.remove(); }
     let options: CircleOptions = {
       'center': {'lat' : this.lat, 'lng' : this.lng},
       'radius': 300,
-      'strokeColor' : '#528BE2',
+      'strokeColor' : '#98b7e2',
       'strokeWidth': 1,
       'fillColor' : '#d5e2ff'
     };
@@ -223,6 +223,29 @@ export class HomePage implements OnInit {
     this.map.addCircle(options).then((circle: Circle) => {
       this.circle = circle;
     });
+  }
+
+
+  async presentNotification() {
+    this.localNotifications.schedule({
+      title: 'Welcome to our shop',
+      trigger: {
+        type: 'location',
+        center: [6.937304, 79.862848],
+        radius: 15,
+        notifyOnEntry: true
+      }
+    });
+
+
+  }
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Your settings have been saved.',
+      duration: 2000
+    });
+    toast.present();
   }
 
 }

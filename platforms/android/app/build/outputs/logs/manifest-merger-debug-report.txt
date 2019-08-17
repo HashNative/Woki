@@ -1,10 +1,22 @@
 -- Merging decision tree log ---
+provider#de.appplant.cordova.plugin.notification.util.AssetProvider
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:9-17:20
+	android:grantUriPermissions
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:92-126
+	android:authorities
+		INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:19-66
+	android:exported
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:67-91
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:127-200
 manifest
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [:tbxml-android:] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\3fd4572393730fa691d777de5a98cb72\AndroidManifest.xml:2:1-11:12
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:2:1-52:12
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\05a642738bac1ebcf2e631b628fc583d\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\92633979c387262bf78f609057270289\AndroidManifest.xml:17:1-29:12
@@ -19,9 +31,9 @@ MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ilham Safee
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b6c16be6eb7113283ad2833c6bc01fd1\AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d724a889f5985cf3360f95ba32326d95\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:98-124
 		INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml
@@ -59,7 +71,7 @@ MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Sa
 	android:name
 		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:5:5-15:19
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\05a642738bac1ebcf2e631b628fc583d\AndroidManifest.xml:7:5-20
@@ -134,11 +146,35 @@ ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\And
 		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:14:61-85
 	android:name
 		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:14:23-60
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:18:9-122
+	android:exported
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:18:19-43
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:18:44-119
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:19:9-120
+	android:exported
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:19:19-43
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:19:44-117
+activity#de.appplant.cordova.plugin.localnotification.ClickReceiver
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:9-205
+	android:launchMode
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:44-79
+	android:exported
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:19-43
+	android:theme
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:154-202
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:80-153
 uses-sdk
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:5-74
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:5-74
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
 MERGED from [:tbxml-android:] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\3fd4572393730fa691d777de5a98cb72\AndroidManifest.xml:7:5-9:41
 MERGED from [:tbxml-android:] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\3fd4572393730fa691d777de5a98cb72\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\05a642738bac1ebcf2e631b628fc583d\AndroidManifest.xml:5:5-44
@@ -167,45 +203,119 @@ MERGED from [:CordovaLib] C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\C
 MERGED from [:CordovaLib] C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d724a889f5985cf3360f95ba32326d95\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d724a889f5985cf3360f95ba32326d95\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:5-74
+INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\35c6255ac6ebe1203ef6074d69bb2fb5\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:42-71
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:42-71
 	android:minSdkVersion
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:15-41
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:15-41
 		INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:17:5-79
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:17:22-76
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:18:5-81
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:5-81
 	android:name
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:18:22-78
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:19:5-79
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:19:22-76
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:22-76
 uses-feature#0x00020000
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:5-78
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:5-78
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\614aa100f79c168582ff3ebf594ca251\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:19-51
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:19-51
 	android:required
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:52-75
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:52-75
 uses-feature#android.hardware.location
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:21:5-62
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:5-62
 	android:name
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:21:19-59
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:19-59
 uses-feature#android.hardware.location.gps
-ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-66
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:5-66
 	android:name
-		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:19-63
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:19-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:5-68
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:22-65
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:13-134
+	android:resource
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:75-131
+	android:name
+		ADDED from C:\Users\Ilham Safeek\Desktop\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:24-74
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\0753b822d3b37f2a7ded29fe814c4533\AndroidManifest.xml:50:22-86
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\92633979c387262bf78f609057270289\AndroidManifest.xml:23:9-26:75
 	android:exported

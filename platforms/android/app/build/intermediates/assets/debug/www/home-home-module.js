@@ -2042,7 +2042,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"addCircle()\">Search</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"presentNotification()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"presentToast()\">Search</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n\r\n</ion-content>\r\n\r\n<!--<ion-footer>-->\r\n<!--  <div class=\"row filter-footer\">-->\r\n<!--      <ion-row align-items-center>-->\r\n<!--          <ion-col>-->\r\n\r\n<!--              <ion-button class=\"round\" color=\"primary-shade\" ><ion-icon name=\"restaurant\"></ion-icon></ion-button>-->\r\n<!--          </ion-col>-->\r\n<!--          <ion-col>-->\r\n<!--              <ion-button class=\"round\" color=\"danger\" ><ion-icon name=\"shirt\"></ion-icon></ion-button>-->\r\n<!--          </ion-col>-->\r\n<!--          <ion-col>-->\r\n<!--              <ion-button class=\"round\" color=\"success-shade\" ><ion-icon name=\"cart\"></ion-icon></ion-button>-->\r\n<!--          </ion-col>-->\r\n<!--          <ion-col>-->\r\n<!--              <ion-button class=\"round\" color=\"warning-shade\" (click)=\"searchModal()\"><ion-icon name=\"more\"></ion-icon></ion-button>-->\r\n<!--          </ion-col>-->\r\n<!--      </ion-row>-->\r\n<!--  </div>-->\r\n<!--</ion-footer>-->\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2053,7 +2053,7 @@ module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"ligh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map {\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXElsaGFtIFNhZmVla1xcRGVza3RvcFxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXAge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4gICJdfQ== */"
+module.exports = "#map {\n  width: 100%;\n  height: 100%; }\n\n.filter-footer {\n  width: 100%;\n  border-top-left-radius: 15px;\n  border-top-right-radius: 15px;\n  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);\n  background: white;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  padding: 0 23px 10px;\n  text-align: center; }\n\n.round {\n  --width: 40px;\n  --height: 40px;\n  --border-radius: 50%;\n  --vertical-align: middle;\n  --padding-start: 10px;\n  --padding-end: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXElsaGFtIFNhZmVla1xcRGVza3RvcFxcV29raS9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBOztBQUlkO0VBQ0UsV0FBVztFQUNYLDRCQUE0QjtFQUM1Qiw2QkFBNkI7RUFDN0IsMENBQTBDO0VBQzFDLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsU0FBUztFQUNULE9BQU87RUFDUCxvQkFBb0I7RUFDcEIsa0JBRUYsRUFBQTs7QUFFQTtFQUNFLGFBQVE7RUFDUixjQUFTO0VBQ1Qsb0JBQWdCO0VBQ2hCLHdCQUFpQjtFQUNqQixxQkFBZ0I7RUFDaEIsbUJBQWMsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjbWFwIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuXHJcblxyXG4uZmlsdGVyLWZvb3RlciB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTVweDtcclxuICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTVweDtcclxuICBib3gtc2hhZG93OiAwIDJweCA0cHggMCByZ2JhKDAsIDAsIDAsIDAuMik7XHJcbiAgYmFja2dyb3VuZDogd2hpdGU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJvdHRvbTogMDtcclxuICBsZWZ0OiAwO1xyXG4gIHBhZGRpbmc6IDAgMjNweCAxMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlclxyXG5cclxufVxyXG5cclxuLnJvdW5kIHtcclxuICAtLXdpZHRoOiA0MHB4O1xyXG4gIC0taGVpZ2h0OiA0MHB4O1xyXG4gIC0tYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIC0tdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAtLXBhZGRpbmctc3RhcnQ6IDEwcHg7XHJcbiAgLS1wYWRkaW5nLWVuZDogMTBweDtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -2072,6 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/google-maps */ "./node_modules/@ionic-native/google-maps/index.js");
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
 /* harmony import */ var _search_modal_search_modal_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search-modal/search-modal.page */ "./src/app/search-modal/search-modal.page.ts");
+/* harmony import */ var _ionic_native_local_notifications_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/local-notifications/ngx */ "./node_modules/@ionic-native/local-notifications/ngx/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2121,14 +2122,19 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
+
 var HomePage = /** @class */ (function () {
-    function HomePage(alertController, geolocation, platform, modal, zone) {
+    function HomePage(alertController, geolocation, platform, modal, zone, localNotifications, toastController) {
         this.alertController = alertController;
         this.geolocation = geolocation;
         this.platform = platform;
         this.modal = modal;
         this.zone = zone;
+        this.localNotifications = localNotifications;
+        this.toastController = toastController;
         this.speed = '0';
+        this.restaurant = 'resources/img/restaurant.png';
     }
     HomePage.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -2363,7 +2369,7 @@ var HomePage = /** @class */ (function () {
                 options = {
                     'center': { 'lat': this.lat, 'lng': this.lng },
                     'radius': 300,
-                    'strokeColor': '#528BE2',
+                    'strokeColor': '#98b7e2',
                     'strokeWidth': 1,
                     'fillColor': '#d5e2ff'
                 };
@@ -2371,6 +2377,39 @@ var HomePage = /** @class */ (function () {
                     _this.circle = circle;
                 });
                 return [2 /*return*/];
+            });
+        });
+    };
+    HomePage.prototype.presentNotification = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.localNotifications.schedule({
+                    title: 'Welcome to our shop',
+                    trigger: {
+                        type: 'location',
+                        center: [6.937304, 79.862848],
+                        radius: 15,
+                        notifyOnEntry: true
+                    }
+                });
+                return [2 /*return*/];
+            });
+        });
+    };
+    HomePage.prototype.presentToast = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var toast;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Your settings have been saved.',
+                            duration: 2000
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
             });
         });
     };
@@ -2384,7 +2423,9 @@ var HomePage = /** @class */ (function () {
             _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_3__["Geolocation"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["Platform"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ModalController"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]])
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"],
+            _ionic_native_local_notifications_ngx__WEBPACK_IMPORTED_MODULE_5__["LocalNotifications"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ToastController"]])
     ], HomePage);
     return HomePage;
 }());
