@@ -68,12 +68,12 @@
         "source": "C:\\Users\\Ilham Safeek\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\92633979c387262bf78f609057270289\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable\\notification_bg.xml"
-    },
-    {
         "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "C:\\Users\\Ilham Safeek\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\92633979c387262bf78f609057270289\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
@@ -84,16 +84,16 @@
         "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\878c9704eeed2436ce00e572c18c4bca\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\Ilham Safeek\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b6c16be6eb7113283ad2833c6bc01fd1\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Ilham Safeek\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b6c16be6eb7113283ad2833c6bc01fd1\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
@@ -180,12 +180,12 @@
         "source": "C:\\Users\\Lahiru Sandaruwan\\Desktop\\ionic app\\ionicTest\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
     },
     {
-        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
         "source": "D:\\Woki\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\Lahiru\\Desktop\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\Lahiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\03b1816a7a9f03435f84a0217d952387\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "D:\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",

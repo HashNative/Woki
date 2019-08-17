@@ -282,6 +282,28 @@ module.exports = [
     "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
     "pluginId": "cordova-plugin-geolocation",
     "runs": true
+  },
+  {
+    "id": "es6-promise-plugin.Promise",
+    "file": "plugins/es6-promise-plugin/www/promise.js",
+    "pluginId": "es6-promise-plugin",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-geofence.TransitionType",
+    "file": "plugins/cordova-plugin-geofence/www/TransitionType.js",
+    "pluginId": "cordova-plugin-geofence",
+    "clobbers": [
+      "TransitionType"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geofence.geofence",
+    "file": "plugins/cordova-plugin-geofence/www/geofence.js",
+    "pluginId": "cordova-plugin-geofence",
+    "clobbers": [
+      "geofence"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -294,7 +316,10 @@ module.exports.metadata =
   "cordova-plugin-ionic-webview": "3.1.2",
   "cordova-plugin-ionic-keyboard": "2.1.3",
   "cordova-plugin-googlemaps": "2.5.0",
-  "cordova-plugin-geolocation": "4.0.1"
+  "cordova-plugin-geolocation": "4.0.1",
+  "cordova-plugin-add-swift-support": "1.6.0",
+  "es6-promise-plugin": "4.2.2",
+  "cordova-plugin-geofence": "0.7.0"
 };
 // BOTTOM OF METADATA
 });

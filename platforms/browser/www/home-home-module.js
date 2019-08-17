@@ -2042,7 +2042,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"addMarker()\">Search</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title color=\"light\">\r\n      Woki\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>\r\n\r\n    </ion-fab>\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"addCircle()\">Cover</ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n</ion-content>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2279,13 +2279,6 @@ var HomePage = /** @class */ (function () {
     };
     HomePage.prototype.startTracking = function () {
         var _this = this;
-        var config = {
-            desiredAccuracy: 0,
-            stationaryRadius: 20,
-            distanceFilter: 10,
-            debug: true,
-            interval: 2000
-        };
         var options = {
             frequency: 500,
             enableHighAccuracy: true
@@ -2297,6 +2290,9 @@ var HomePage = /** @class */ (function () {
                 _this.marker.setPosition({ lat: _this.lat, lng: _this.lng });
                 _this.centerLocation(_this.lat, _this.lng);
                 _this.speed = (+position.coords.speed * 3.6) + 'Km/h';
+                if (_this.circle) {
+                    _this.addCircle();
+                }
             });
         });
     };
@@ -2348,6 +2344,28 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
+    HomePage.prototype.addCircle = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var options;
+            var _this = this;
+            return __generator(this, function (_a) {
+                if (this.circle) {
+                    this.circle.remove();
+                }
+                options = {
+                    'center': { 'lat': this.lat, 'lng': this.lng },
+                    'radius': 300,
+                    'strokeColor': '#528BE2',
+                    'strokeWidth': 1,
+                    'fillColor': '#d5e2ff'
+                };
+                this.map.addCircle(options).then(function (circle) {
+                    _this.circle = circle;
+                });
+                return [2 /*return*/];
+            });
+        });
+    };
     HomePage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
@@ -2363,91 +2381,6 @@ var HomePage = /** @class */ (function () {
     return HomePage;
 }());
 
-// async showAlert1() {
-//   const alert = await this.alertController.create({
-//     header: 'Prompt!',
-//     inputs: [
-//       {
-//         name: 'name1',
-//         type: 'text',
-//         placeholder: 'Placeholder 1'
-//       },
-//       {
-//         name: 'name2',
-//         type: 'text',
-//         id: 'name2-id',
-//         value: 'hello',
-//         placeholder: 'Placeholder 2'
-//       },
-//       {
-//         name: 'name3',
-//         value: 'http://ionicframework.com',
-//         type: 'url',
-//         placeholder: 'Favorite site ever'
-//       },
-//       // input date with min & max
-//       {
-//         name: 'name4',
-//         type: 'date',
-//         min: '2017-03-01',
-//         max: '2018-10-12'
-//       },
-//       // input date without min nor max
-//       {
-//         name: 'name5',
-//         type: 'date'
-//       },
-//       {
-//         name: 'name6',
-//         type: 'number',
-//         min: -5,
-//         max: 10
-//       },
-//       {
-//         name: 'name7',
-//         type: 'number'
-//       }
-//     ],
-//     buttons: [
-//       {
-//         text: 'Cancel',
-//         role: 'cancel',
-//         cssClass: 'secondary',
-//         handler: () => {
-//           console.log('Confirm Cancel');
-//         }
-//       }, {
-//         text: 'Ok',
-//         handler: () => {
-//           console.log('Confirm Ok');
-//         }
-//       }
-//     ]
-//   });
-//   await alert.present();
-// }
-// async showAlert2() {
-//   const alert = await this.alertController.create({
-//     header: 'Confirm!',
-//     message: 'Message <strong>text</strong>!!!',
-//     buttons: [
-//       {
-//         text: 'Cancel',
-//         role: 'cancel',
-//         cssClass: 'secondary',
-//         handler: (blah) => {
-//           console.log('Confirm Cancel: blah');
-//         }
-//       }, {
-//         text: 'Okay',
-//         handler: () => {
-//           console.log('Confirm Okay');
-//         }
-//       }
-//     ]
-//   });
-//   await alert.present();
-// }
 
 
 /***/ })
