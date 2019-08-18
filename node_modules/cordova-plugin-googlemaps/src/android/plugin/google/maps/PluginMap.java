@@ -71,6 +71,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -860,18 +861,20 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
                   e.printStackTrace();
                 }
               }
-              String[] pluginNames = plugins.keySet().toArray(new String[plugins.size()]);
-              PluginEntry pluginEntry;
-              for (int i = 0; i < pluginNames.length; i++) {
-                pluginEntry = plugins.remove(pluginNames[i]);
-                if (pluginEntry == null) {
-                  continue;
+              if (plugins.size() > 0) {
+                String[] pluginNames = plugins.keySet().toArray(new String[plugins.size()]);
+                PluginEntry pluginEntry;
+                for (int i = 0; i < pluginNames.length; i++) {
+                  pluginEntry = plugins.remove(pluginNames[i]);
+                  if (pluginEntry == null) {
+                    continue;
+                  }
+                  pluginEntry.plugin.onDestroy();
+                  ((MyPlugin)pluginEntry.plugin).map = null;
+                  ((MyPlugin)pluginEntry.plugin).mapCtrl = null;
+                  //((MyPlugin)pluginEntry.plugin).pluginMap = null; // Do not clear at here.
+                  pluginEntry = null;
                 }
-                pluginEntry.plugin.onDestroy();
-                ((MyPlugin)pluginEntry.plugin).map = null;
-                ((MyPlugin)pluginEntry.plugin).mapCtrl = null;
-                //((MyPlugin)pluginEntry.plugin).pluginMap = null; // Do not clear at here.
-                pluginEntry = null;
               }
               //Log.d("pluginMap", "--> mapView = " + mapView);
               projection = null;
@@ -1805,22 +1808,6 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
   public void setMyLocationEnabled(final JSONArray args, final CallbackContext callbackContext) throws JSONException {
 
     final JSONObject params = args.getJSONObject(0);
-    Boolean isMyLocationEnabled = false;
-    if (params.has("myLocation")) {
-      //Log.d(TAG, "--->myLocation = " + params.getBoolean("myLocation"));
-      isMyLocationEnabled = params.getBoolean("myLocation");
-    }
-
-    Boolean isMyLocationButtonEnabled = false;
-    if (params.has("myLocationButton")) {
-      //Log.d(TAG, "--->myLocationButton = " + params.getBoolean("myLocationButton"));
-      isMyLocationButtonEnabled = params.getBoolean("myLocationButton");
-    }
-    // Request geolocation permission.
-    if (!isMyLocationButtonEnabled && !isMyLocationEnabled) {
-      callbackContext.success();
-      return;
-    }
 
     boolean locationPermission = PermissionChecker.checkSelfPermission(cordova.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) == PermissionChecker.PERMISSION_GRANTED;
     //Log.d(TAG, "---> setMyLocationEnabled, hasPermission =  " + locationPermission);
@@ -1882,6 +1869,7 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
       }
     });
   }
+
   /**
    * Clear all markups
    * @param args Parameters given from JavaScript side
@@ -2920,8 +2908,7 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
   }
   @Override
   public void onPoiClick(PointOfInterest pointOfInterest) {
-
-    String js = String.format(Locale.ENGLISH, "javascript:if('%s' in plugin.google.maps){plugin.google.maps['%s']({evtName: '%s', callback:'_onMapEvent', args:['%s', '%s', new plugin.google.maps.LatLng(%f, %f)]});}",
+    String js = String.format(Locale.ENGLISH, "javascript:if('%s' in plugin.google.maps){plugin.google.maps['%s']({evtName: '%s', callback:'_onMapEvent', args:['%s', \"%s\", new plugin.google.maps.LatLng(%f, %f)]});}",
     mapId, mapId, "poi_click", pointOfInterest.placeId, pointOfInterest.name, pointOfInterest.latLng.latitude, pointOfInterest.latLng.longitude);
     jsCallback(js);
   }
@@ -2967,32 +2954,33 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
             //}
             //pluginEntry = plugins.get(pluginName);
             //myPlugin = (MyPlugin) pluginEntry.plugin;
-
-            keys = objects.keys.toArray(new String[objects.size()]);
-            for (j = 0; j < keys.length; j++) {
-              key = keys[j];
-              if (key.contains("marker")) {
-                continue;
-              }
-              if (key.contains("property")) {
-                properties = (JSONObject) objects.get(key);
-                try {
-                  //Log.d("PluginMap", "-----> key = " + key + ", " + properties.toString(2));
-                  //Log.d("PluginMap", "-----> key = " + key + ", isVisible = " + properties.getBoolean("isVisible") + ", isClickable = " + properties.getBoolean("isClickable"));
-                  // skip invisible overlay
-                  if (!properties.getBoolean("isVisible") ||
-                      !properties.getBoolean("isClickable")) {
-                    continue;
+            if (objects.size() > 0) {
+              keys = objects.keys.toArray(new String[objects.size()]);
+              for (j = 0; j < keys.length; j++) {
+                key = keys[j];
+                if (key.contains("marker")) {
+                  continue;
+                }
+                if (key.contains("property")) {
+                  properties = (JSONObject) objects.get(key);
+                  try {
+                    //Log.d("PluginMap", "-----> key = " + key + ", " + properties.toString(2));
+                    //Log.d("PluginMap", "-----> key = " + key + ", isVisible = " + properties.getBoolean("isVisible") + ", isClickable = " + properties.getBoolean("isClickable"));
+                    // skip invisible overlay
+                    if (!properties.getBoolean("isVisible") ||
+                        !properties.getBoolean("isClickable")) {
+                      continue;
+                    }
+                  } catch (JSONException e) {
+                    e.printStackTrace();
                   }
-                } catch (JSONException e) {
-                  e.printStackTrace();
-                }
-                bounds = (LatLngBounds) objects.get(key.replace("property", "bounds"));
-                if (bounds.contains(point)) {
-                  //Log.d("PluginMap", "-----> add key = " + key.replace("property_", ""));
-                  boundsHitList.put(key, objects.get(key.replace("property_", "")));
-                }
+                  bounds = (LatLngBounds) objects.get(key.replace("property", "bounds"));
+                  if (bounds.contains(point)) {
+                    //Log.d("PluginMap", "-----> add key = " + key.replace("property_", ""));
+                    boundsHitList.put(key, objects.get(key.replace("property_", "")));
+                  }
 
+                }
               }
             }
 

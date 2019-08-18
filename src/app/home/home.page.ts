@@ -79,7 +79,7 @@ export class HomePage implements OnInit {
                 lat: this.lat,
                 lng: this.lng
               },
-              zoom: 18
+              zoom: 16
             },
             mapType: GoogleMapsMapTypeId.ROADMAP
           }
@@ -128,7 +128,7 @@ export class HomePage implements OnInit {
     // this.map.setCameraTarget(location);
     this.map.animateCamera({
       target: location,
-      zoom: 18,
+      zoom: 16,
       bearing: 140,
       duration: 1500,
       padding: 0  // default = 20px
@@ -170,6 +170,12 @@ export class HomePage implements OnInit {
         if (this.circle) {
           this.addCircle();
         }
+
+        if (this.calculateDistance(6.937414, 79.861037) < 500) {
+
+        }
+
+
       });
 
     });
@@ -241,11 +247,22 @@ export class HomePage implements OnInit {
   }
 
   async presentToast() {
+    let distance = this.calculateDistance(6.937414, 79.861037).toString();
     const toast = await this.toastController.create({
-      message: 'Your settings have been saved.',
+      message: distance + 'm',
       duration: 2000
     });
     toast.present();
+  }
+
+
+    calculateDistance(lat2 , long2) {
+    let p = 0.017453292519943295;    // Math.PI / 180
+    let c = Math.cos;
+    let a = 0.5 - c((this.lat - lat2) * p) / 2 + c(lat2 * p) * c((this.lat) * p) * (1 - c(((this.lng - long2) * p))) / 2;
+    let dis = (12742 * Math.asin(Math.sqrt(a))); // 2 * R; R = 6371 km
+    let result = dis * 1000;
+    return result;
   }
 
 }

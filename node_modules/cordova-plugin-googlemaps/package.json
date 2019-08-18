@@ -1,14 +1,14 @@
 {
   "_from": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
-  "_id": "cordova-plugin-googlemaps@2.5.1-beta-20190213-1639",
+  "_id": "cordova-plugin-googlemaps@2.6.3-20190614-1928",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/cordova-plugin-googlemaps",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
-    "rawSpec": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+    "raw": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+    "rawSpec": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
     "saveSpec": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
     "fetchSpec": "https://github.com/mapsplugin/cordova-plugin-googlemaps.git",
     "gitCommittish": "multiple_maps"
@@ -17,9 +17,9 @@
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#f372f4f5c2e752df4f0fbfa91558799cac1d66ba",
-  "_spec": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
-  "_where": "C:\\Users\\Lahiru\\Desktop\\Woki",
+  "_resolved": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#7104facd78a2865332bab3ba839458e9498340b4",
+  "_spec": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+  "_where": "D:\\Woki\\Woki",
   "author": {
     "name": "Masashi Katsumata, Hirbod Mirjavadi"
   },
@@ -35,6 +35,9 @@
       "browser"
     ]
   },
+  "dependencies": {
+    "cordova-common": "^3.1.0"
+  },
   "deprecated": false,
   "description": "Google Maps native SDK for Android and iOS, and Google Maps JavaScript API v3 for browser.",
   "devDependencies": {
@@ -49,7 +52,7 @@
     },
     {
       "name": "cordova-ios",
-      "version": ">=4.9.0"
+      "version": ">=4.5.0"
     },
     {
       "name": "apple-xcode",
@@ -83,5 +86,5 @@
     "test": "jest && npm run eslint",
     "test:watch": "jest --watch"
   },
-  "version": "2.5.1-beta-20190213-1639"
+  "version": "2.6.3-20190614-1928"
 }

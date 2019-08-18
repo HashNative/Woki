@@ -1,19 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title color="light">
-      Woki
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--<ion-header>-->
+<!--  <ion-toolbar>-->
+<!--    <ion-title color="light">-->
+<!--      Woki-->
+<!--    </ion-title>-->
+<!--  </ion-toolbar>-->
+<!--</ion-header>-->
 
 <ion-content>
   <div id="map">
-    <ion-fab vertical="bottom" horizontal="start">
-      <ion-fab-button color="dark" (click)="presentNotification()">Filter</ion-fab-button>
+    <ion-fab vertical="top" horizontal="start">
+      <ion-fab-button color="dark" (click)="presentToast()">Woki</ion-fab-button>
 
     </ion-fab>
+<!--    <ion-fab vertical="bottom" horizontal="start">-->
+<!--      <ion-fab-button color="dark" (click)="searchModal()">Filter</ion-fab-button>-->
+
+<!--    </ion-fab>-->
     <ion-fab vertical="center" horizontal="end" slot="fixed">
-    <ion-fab-button color="light" (click)="presentToast()">Search</ion-fab-button>
+    <ion-fab-button color="light" (click)="addCircle()"><ion-icon color="primary" name="ribbon"></ion-icon></ion-fab-button>
 <!--      <ion-fab-list side="end">-->
 <!--        <ion-fab-button (click)="showAlert1()"><ion-icon name="car"></ion-icon></ion-fab-button>-->
 <!--        <ion-fab-button (click)="showAlert2()"><ion-icon name="airplane"></ion-icon></ion-fab-button>-->
@@ -30,25 +34,55 @@
 
 </ion-content>
 
-<!--<ion-footer>-->
-<!--  <div class="row filter-footer">-->
-<!--      <ion-row align-items-center>-->
-<!--          <ion-col>-->
+<div class="filter-footer">
+  <ion-list>
+    <ion-item-sliding #item>
 
-<!--              <ion-button class="round" color="primary-shade" ><ion-icon name="restaurant"></ion-icon></ion-button>-->
-<!--          </ion-col>-->
-<!--          <ion-col>-->
-<!--              <ion-button class="round" color="danger" ><ion-icon name="shirt"></ion-icon></ion-button>-->
-<!--          </ion-col>-->
-<!--          <ion-col>-->
-<!--              <ion-button class="round" color="success-shade" ><ion-icon name="cart"></ion-icon></ion-button>-->
-<!--          </ion-col>-->
-<!--          <ion-col>-->
-<!--              <ion-button class="round" color="warning-shade" (click)="searchModal()"><ion-icon name="more"></ion-icon></ion-button>-->
-<!--          </ion-col>-->
-<!--      </ion-row>-->
-<!--  </div>-->
-<!--</ion-footer>-->
+      <ion-item-options side="end">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+        <button ion-button (click)="unread(item)"><ion-icon name="navigate"></ion-icon></button>
+      </ion-item-options>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://cyprus.aggeliesergasias.com/wp-content/uploads/job-manager-uploads/company_logo/2018/08/bk.png">
+        </ion-avatar>
+        <ion-label>Burger King</ion-label>
+        <p><ion-badge color="warning">35% off</ion-badge></p>
+      </ion-item>
+    </ion-item-sliding>
+    <ion-item-sliding #item>
+
+      <ion-item-options side="end">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+        <button ion-button (click)="unread(item)"><ion-icon name="navigate"></ion-icon></button>
+      </ion-item-options>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://vignette.wikia.nocookie.net/logopedia/images/d/d3/Pizza_Hut_2010.png/revision/latest?cb=20190627174535">
+        </ion-avatar>
+        <ion-label>Pizza Hut</ion-label>
+        <p><ion-badge color="danger">40% off</ion-badge></p>
+      </ion-item>
+    </ion-item-sliding>
+    <ion-item-sliding #item>
+
+      <ion-item-options side="end">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+        <button ion-button (click)="unread(item)"><ion-icon name="navigate"></ion-icon></button>
+      </ion-item-options>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="http://allaboutwindowsphone.com/images/appicons/285504.png">
+        </ion-avatar>
+        <ion-label>Dinemore</ion-label>
+        <p><ion-badge color="primary">20% off</ion-badge></p>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</div>
 
 
 <!-- <ion-content padding>

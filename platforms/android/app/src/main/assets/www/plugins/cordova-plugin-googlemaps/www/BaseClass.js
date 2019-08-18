@@ -27,6 +27,7 @@ BaseClass.prototype = {
   },
 
   set: function (key, value, noNotify) {
+    if (key === '__pgmId') return;
     var prev = this.get(key);
 
     this[VARS_FIELD][key] = value;
@@ -39,6 +40,7 @@ BaseClass.prototype = {
   },
 
   bindTo: function (key, target, targetKey, noNotify) {
+    if (key === '__pgmId') return;
     targetKey = targetKey || key;
 
     // If `noNotify` is true, prevent `(targetKey)_changed` event occurrs,
