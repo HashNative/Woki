@@ -18,10 +18,10 @@ INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:15
 	android:name
 		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:15:127-200
 manifest
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\5ddf84418e4cfb50a6619c76dcc131b0\AndroidManifest.xml:2:1-52:12
 MERGED from [:tbxml-android:] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\543fd4f604570b20d20df33c7a82e40f\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:17:1-32:12
@@ -38,9 +38,9 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ilham Saf
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\ddefe58445719e4908de72516f50e8ba\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\de0d97544ccd05995f9b3f7695bf3f4a\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\74f91bd96787c08439d0f81dc768befd\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:2:98-124
 		INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml
@@ -78,7 +78,7 @@ MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Sa
 	android:name
 		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\60929503ddfd8e9a02e58524de483ad2\AndroidManifest.xml:7:5-20
@@ -169,9 +169,13 @@ ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:9-
 		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:154-202
 	android:name
 		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:20:80-153
+service#de.appplant.cordova.plugin.background.ForegroundService
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:21:9-91
+	android:name
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:21:18-88
 uses-sdk
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:5-74
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:5-74
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\5ddf84418e4cfb50a6619c76dcc131b0\AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\5ddf84418e4cfb50a6619c76dcc131b0\AndroidManifest.xml:7:5-9:41
 MERGED from [:tbxml-android:] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\543fd4f604570b20d20df33c7a82e40f\AndroidManifest.xml:7:5-9:41
@@ -204,49 +208,49 @@ MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ilham Safeek\.g
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\de0d97544ccd05995f9b3f7695bf3f4a\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\74f91bd96787c08439d0f81dc768befd\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\74f91bd96787c08439d0f81dc768befd\AndroidManifest.xml:20:5-44
-INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:5-74
+INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:5-74
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\30824faca83dc6d3368110aae4614805\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:42-71
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:42-71
 	android:minSdkVersion
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:22:15-41
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:15-41
 		INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:5-81
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:5-81
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:23:22-78
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:5-79
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:24:22-76
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:22-76
 uses-feature#android.hardware.location.gps
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:5-66
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:5-66
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:25:19-63
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:19-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:5-79
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:26:22-76
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:22-76
 uses-feature#0x00020000
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:5-78
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:5-78
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Ilham Safeek\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\0f0dd0195cfaaa953e0bd6684925243a\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:19-51
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:19-51
 	android:required
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:27:52-75
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:52-75
 uses-feature#android.hardware.location
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:5-62
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:5-62
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:28:19-59
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:19-59
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:5-68
+ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:30:5-68
 	android:name
-		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:29:22-65
+		ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:30:22-65
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from D:\Woki\Woki\platforms\android\app\src\main\AndroidManifest.xml:16:13-134
 	android:resource

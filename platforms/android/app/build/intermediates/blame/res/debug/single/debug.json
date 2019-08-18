@@ -148,12 +148,12 @@
         "source": "D:\\Woki\\Woki\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
     },
     {
-        "merged": "D:\\Woki\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
-        "source": "D:\\Woki\\Woki\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
-    },
-    {
         "merged": "D:\\Woki\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
         "source": "D:\\Woki\\Woki\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "D:\\Woki\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "D:\\Woki\\Woki\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
     },
     {
         "merged": "D:\\Woki\\Woki\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",

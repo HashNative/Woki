@@ -33,6 +33,9 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {
