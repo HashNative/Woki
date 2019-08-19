@@ -15,6 +15,7 @@ import {SearchModalPage} from '../search-modal/search-modal.page';
 import {LocalNotifications} from '@ionic-native/local-notifications/ngx';
 import {ToastController} from '@ionic/angular';
 import { BackgroundMode } from '@ionic-native/background-mode/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 
 declare var google;
 
@@ -35,6 +36,7 @@ export class HomePage implements OnInit {
     public watch: any;
     circle: Circle;
     searchEnable = false;
+    public offers: any;
 
 
     constructor(
@@ -45,12 +47,13 @@ export class HomePage implements OnInit {
         public zone: NgZone,
         private localNotifications: LocalNotifications,
         public toastController: ToastController,
-        private backgroundMode: BackgroundMode) {
+        private backgroundMode: BackgroundMode,
+        private http: HTTP) {
     }
 
     async ngOnInit() {
         this.platform.ready().then(() => {
-            this.backgroundMode.enable();
+            // this.backgroundMode.enable();
             this.loadMap();
             this.startTracking();
         });
@@ -128,7 +131,7 @@ export class HomePage implements OnInit {
         return await alert.present();
     }
 
-    async centerLocation(lat = null, lng = null) {
+    centerLocation(lat = null, lng = null) {
         let location = {
             lat: this.lat,
             lng: this.lng
@@ -188,9 +191,7 @@ export class HomePage implements OnInit {
                 if (this.circle) {
                     this.addCircle();
                 }
-
                 this.search();
-
 
             });
 
@@ -235,7 +236,7 @@ export class HomePage implements OnInit {
         return await alert.present();
     }
 
-    async addCircle() {
+    addCircle() {
         if (this.circle) {
             this.circle.remove();
         }
@@ -252,19 +253,17 @@ export class HomePage implements OnInit {
         });
     }
 
-    async presentNotification(message) {
+    presentNotification(message, name, item, price) {
         this.localNotifications.schedule({
             id: 1,
             title: message,
-            text: 'Burger king gives 35% offer',
+            text: name + ' gives ' + price + ' offer on ' + item,
             foreground: true
         });
-
-
     }
 
-    async presentToast() {
-        let distance = this.calculateDistance(6.937414, 79.861037).toString();
+    async presentToast(distance) {
+
         const toast = await this.toastController.create({
             message: distance + 'm',
             duration: 2000
@@ -292,11 +291,33 @@ export class HomePage implements OnInit {
         }
     }
 
-    async search() {
-        if (this.searchEnable === true && this.calculateDistance(6.937414, 79.861037) < 500) {
-            this.presentNotification('An offer available near you.');
-        }
+    search() {
+
+        this.http.get('https://www.hashnative.com/alloffers', {}, {})
+            .then(data => {
+                this.offers = JSON.parse(data.data);
+
+                for (var j = 0; j < this.offers.length; j++) {
+                    var location = this.offers[j].location;
+                    var name = this.offers[j].name;
+                    var radius = this.offers[j].radius;
+                    var offer_item = this.offers[j].offer_item;
+                    var offer_price = this.offers[j].offer_price;
+
+                    if (this.searchEnable === true && this.calculateDistance(location.split(',')[0], location.split(',')[1]) < radius) {
+                        this.presentNotification('An offer available near you.', name , offer_item , offer_price);
+                        console.log('success');
+                    }
+                }
+            })
+            .catch(error => {
+                console.log(error.error); // error message as string
+            });
+
+       // }
+
     }
+
 
 }
 

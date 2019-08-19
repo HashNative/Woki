@@ -2042,7 +2042,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--<ion-header>-->\r\n<!--  <ion-toolbar>-->\r\n<!--    <ion-title color=\"light\">-->\r\n<!--      Woki-->\r\n<!--    </ion-title>-->\r\n<!--  </ion-toolbar>-->\r\n<!--</ion-header>-->\r\n\r\n<ion-content>\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"top\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"presentToast()\">Woki</ion-fab-button>\r\n\r\n    </ion-fab>\r\n<!--    <ion-fab vertical=\"bottom\" horizontal=\"start\">-->\r\n<!--      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>-->\r\n\r\n<!--    </ion-fab>-->\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"startSearch()\"><ion-icon color=\"primary\" name=\"ribbon\"></ion-icon></ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n\r\n</ion-content>\r\n\r\n<div class=\"filter-footer\">\r\n  <ion-list>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <button ion-button (click)=\"favorite(item)\">Favorite</button>\r\n        <button ion-button color=\"danger\" (click)=\"share(item)\">Share</button>\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"https://cyprus.aggeliesergasias.com/wp-content/uploads/job-manager-uploads/company_logo/2018/08/bk.png\">\r\n        </ion-avatar>\r\n        <ion-label>Burger King</ion-label>\r\n        <p><ion-badge color=\"warning\">35% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <button ion-button (click)=\"favorite(item)\">Favorite</button>\r\n        <button ion-button color=\"danger\" (click)=\"share(item)\">Share</button>\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"https://vignette.wikia.nocookie.net/logopedia/images/d/d3/Pizza_Hut_2010.png/revision/latest?cb=20190627174535\">\r\n        </ion-avatar>\r\n        <ion-label>Pizza Hut</ion-label>\r\n        <p><ion-badge color=\"danger\">40% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <button ion-button (click)=\"favorite(item)\">Favorite</button>\r\n        <button ion-button color=\"danger\" (click)=\"share(item)\">Share</button>\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"http://allaboutwindowsphone.com/images/appicons/285504.png\">\r\n        </ion-avatar>\r\n        <ion-label>Dinemore</ion-label>\r\n        <p><ion-badge color=\"primary\">20% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n  </ion-list>\r\n</div>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<!--<ion-header>-->\r\n<!--  <ion-toolbar>-->\r\n<!--    <ion-title color=\"light\">-->\r\n<!--      Woki-->\r\n<!--    </ion-title>-->\r\n<!--  </ion-toolbar>-->\r\n<!--</ion-header>-->\r\n\r\n<ion-content>\r\n  <div id=\"map\">\r\n    <ion-fab vertical=\"top\" horizontal=\"start\">\r\n      <ion-fab-button color=\"dark\" (click)=\"getDataFromAPI()\">Woki</ion-fab-button>\r\n\r\n    </ion-fab>\r\n<!--    <ion-fab vertical=\"bottom\" horizontal=\"start\">-->\r\n<!--      <ion-fab-button color=\"dark\" (click)=\"searchModal()\">Filter</ion-fab-button>-->\r\n\r\n<!--    </ion-fab>-->\r\n    <ion-fab vertical=\"center\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button color=\"light\" (click)=\"startSearch()\"><ion-icon color=\"primary\" name=\"ribbon\"></ion-icon></ion-fab-button>\r\n<!--      <ion-fab-list side=\"end\">-->\r\n<!--        <ion-fab-button (click)=\"showAlert1()\"><ion-icon name=\"car\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert2()\"><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>-->\r\n<!--        <ion-fab-button (click)=\"showAlert3()\"><ion-icon name=\"build\"></ion-icon></ion-fab-button>-->\r\n<!--      </ion-fab-list>-->\r\n    </ion-fab>\r\n\r\n    <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n      <ion-fab-button (click)=\"centerLocation()\" size='small' color=\"light\">\r\n        <ion-icon name=\"locate\"></ion-icon>\r\n      </ion-fab-button>\r\n    </ion-fab>\r\n  </div>\r\n\r\n</ion-content>\r\n\r\n<div class=\"filter-footer\">\r\n  <ion-list>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n        <ion-chip color=\"danger\">\r\n          <ion-icon name=\"heart\" color=\"danger\"></ion-icon>\r\n          <ion-label> Save</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"https://cyprus.aggeliesergasias.com/wp-content/uploads/job-manager-uploads/company_logo/2018/08/bk.png\">\r\n        </ion-avatar>\r\n        <ion-label>Burger King</ion-label>\r\n        <p><ion-badge color=\"warning\">35% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n        <ion-chip color=\"danger\">\r\n          <ion-icon name=\"heart\" color=\"danger\"></ion-icon>\r\n          <ion-label> Save</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"https://vignette.wikia.nocookie.net/logopedia/images/d/d3/Pizza_Hut_2010.png/revision/latest?cb=20190627174535\">\r\n        </ion-avatar>\r\n        <ion-label>Pizza Hut</ion-label>\r\n        <p><ion-badge color=\"danger\">40% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n    <ion-item-sliding #item>\r\n\r\n      <ion-item-options side=\"end\">\r\n        <ion-chip color=\"primary\">\r\n          <ion-icon name=\"navigate\" color=\"primary\"></ion-icon>\r\n          <ion-label> Go</ion-label>\r\n        </ion-chip>\r\n        <ion-chip color=\"danger\">\r\n          <ion-icon name=\"heart\" color=\"danger\"></ion-icon>\r\n          <ion-label> Save</ion-label>\r\n        </ion-chip>\r\n      </ion-item-options>\r\n      <ion-item>\r\n        <ion-avatar slot=\"start\">\r\n          <img src=\"http://allaboutwindowsphone.com/images/appicons/285504.png\">\r\n        </ion-avatar>\r\n        <ion-label>Dinemore</ion-label>\r\n        <p><ion-badge color=\"primary\">20% off</ion-badge></p>\r\n      </ion-item>\r\n    </ion-item-sliding>\r\n  </ion-list>\r\n</div>\r\n\r\n\r\n<!-- <ion-content padding>\r\n  <ion-fab vertical=\"bottom\" horizontal=\"start\">\r\n    <ion-fab-button color=\"dark\">Filter</ion-fab-button>\r\n    <ion-fab-list side=\"end\">\r\n      <ion-fab-button><ion-icon name=\"airplane\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"car\"></ion-icon></ion-fab-button>\r\n      <ion-fab-button><ion-icon name=\"build\"></ion-icon></ion-fab-button>\r\n      <ion-alert-controller (click)=\"presentAlert()\">\r\n        <ion-icon name=\"calendar\"></ion-icon>\r\n      </ion-alert-controller>\r\n    </ion-fab-list>\r\n  </ion-fab>\r\n</ion-content> -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2074,6 +2074,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_modal_search_modal_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search-modal/search-modal.page */ "./src/app/search-modal/search-modal.page.ts");
 /* harmony import */ var _ionic_native_local_notifications_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/local-notifications/ngx */ "./node_modules/@ionic-native/local-notifications/ngx/index.js");
 /* harmony import */ var _ionic_native_background_mode_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/background-mode/ngx */ "./node_modules/@ionic-native/background-mode/ngx/index.js");
+/* harmony import */ var _ionic_native_http_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/http/ngx */ "./node_modules/@ionic-native/http/ngx/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2126,8 +2127,9 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(alertController, geolocation, platform, modal, zone, localNotifications, toastController, backgroundMode) {
+    function HomePage(alertController, geolocation, platform, modal, zone, localNotifications, toastController, backgroundMode, http) {
         this.alertController = alertController;
         this.geolocation = geolocation;
         this.platform = platform;
@@ -2136,6 +2138,7 @@ var HomePage = /** @class */ (function () {
         this.localNotifications = localNotifications;
         this.toastController = toastController;
         this.backgroundMode = backgroundMode;
+        this.http = http;
         this.speed = '0';
         this.searchEnable = false;
     }
@@ -2144,7 +2147,7 @@ var HomePage = /** @class */ (function () {
             var _this = this;
             return __generator(this, function (_a) {
                 this.platform.ready().then(function () {
-                    _this.backgroundMode.enable();
+                    // this.backgroundMode.enable();
                     _this.loadMap();
                     _this.startTracking();
                 });
@@ -2236,30 +2239,24 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.centerLocation = function (lat, lng) {
         if (lat === void 0) { lat = null; }
         if (lng === void 0) { lng = null; }
-        return __awaiter(this, void 0, void 0, function () {
-            var location;
-            return __generator(this, function (_a) {
-                location = {
-                    lat: this.lat,
-                    lng: this.lng
-                };
-                if (lat && lng) {
-                    location = {
-                        lat: lat,
-                        lng: lng
-                    };
-                }
-                // this.map.setCameraTarget(location);
-                this.map.animateCamera({
-                    target: location,
-                    zoom: 16,
-                    bearing: 140,
-                    duration: 1500,
-                    padding: 0 // default = 20px
-                }).then(function () {
-                });
-                return [2 /*return*/];
-            });
+        var location = {
+            lat: this.lat,
+            lng: this.lng
+        };
+        if (lat && lng) {
+            location = {
+                lat: lat,
+                lng: lng
+            };
+        }
+        // this.map.setCameraTarget(location);
+        this.map.animateCamera({
+            target: location,
+            zoom: 16,
+            bearing: 140,
+            duration: 1500,
+            padding: 0 // default = 20px
+        }).then(function () {
         });
     };
     HomePage.prototype.placeMarker = function () {
@@ -2364,51 +2361,38 @@ var HomePage = /** @class */ (function () {
         });
     };
     HomePage.prototype.addCircle = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var options;
-            var _this = this;
-            return __generator(this, function (_a) {
-                if (this.circle) {
-                    this.circle.remove();
-                }
-                options = {
-                    'center': { 'lat': this.lat, 'lng': this.lng },
-                    'radius': 300,
-                    'strokeColor': '#98b7e2',
-                    'strokeWidth': 1,
-                    'fillColor': '#d5e2ff'
-                };
-                this.map.addCircle(options).then(function (circle) {
-                    _this.circle = circle;
-                });
-                return [2 /*return*/];
-            });
+        var _this = this;
+        if (this.circle) {
+            this.circle.remove();
+        }
+        var options = {
+            'center': { 'lat': this.lat, 'lng': this.lng },
+            'radius': 300,
+            'strokeColor': '#98b7e2',
+            'strokeWidth': 1,
+            'fillColor': '#d5e2ff'
+        };
+        this.map.addCircle(options).then(function (circle) {
+            _this.circle = circle;
         });
     };
-    HomePage.prototype.presentNotification = function (message) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.localNotifications.schedule({
-                    id: 1,
-                    title: message,
-                    text: 'Burger king gives 35% offer',
-                    foreground: true
-                });
-                return [2 /*return*/];
-            });
+    HomePage.prototype.presentNotification = function (message, name, item, price) {
+        this.localNotifications.schedule({
+            id: 1,
+            title: message,
+            text: name + 'gives ' + price + ' offer on ' + item,
+            foreground: true
         });
     };
-    HomePage.prototype.presentToast = function () {
+    HomePage.prototype.presentToast = function (distance) {
         return __awaiter(this, void 0, void 0, function () {
-            var distance, toast;
+            var toast;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        distance = this.calculateDistance(6.937414, 79.861037).toString();
-                        return [4 /*yield*/, this.toastController.create({
-                                message: distance + 'm',
-                                duration: 2000
-                            })];
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: distance + 'm',
+                            duration: 2000
+                        })];
                     case 1:
                         toast = _a.sent();
                         toast.present();
@@ -2442,14 +2426,26 @@ var HomePage = /** @class */ (function () {
         });
     };
     HomePage.prototype.search = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                if (this.searchEnable === true && this.calculateDistance(6.937414, 79.861037) < 500) {
-                    this.presentNotification('An offer available near you.');
+        var _this = this;
+        this.http.get('https://www.hashnative.com/alloffers', {}, {})
+            .then(function (data) {
+            _this.offers = JSON.parse(data.data);
+            for (var j = 0; j < _this.offers.length; j++) {
+                var location = _this.offers[j].location;
+                var name = _this.offers[j].name;
+                var radius = _this.offers[j].radius;
+                var offer_item = _this.offers[j].offer_item;
+                var offer_price = _this.offers[j].offer_price;
+                if (_this.searchEnable === true && _this.calculateDistance(location.split(',')[0], location.split(',')[1]) < radius) {
+                    _this.presentNotification('An offer available near you.', name, offer_item, offer_price);
+                    console.log('success');
                 }
-                return [2 /*return*/];
-            });
+            }
+        })
+            .catch(function (error) {
+            console.log(error.error); // error message as string
         });
+        // }
     };
     HomePage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -2464,7 +2460,8 @@ var HomePage = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"],
             _ionic_native_local_notifications_ngx__WEBPACK_IMPORTED_MODULE_5__["LocalNotifications"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_1__["ToastController"],
-            _ionic_native_background_mode_ngx__WEBPACK_IMPORTED_MODULE_6__["BackgroundMode"]])
+            _ionic_native_background_mode_ngx__WEBPACK_IMPORTED_MODULE_6__["BackgroundMode"],
+            _ionic_native_http_ngx__WEBPACK_IMPORTED_MODULE_7__["HTTP"]])
     ], HomePage);
     return HomePage;
 }());

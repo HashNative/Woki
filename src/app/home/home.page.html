@@ -9,7 +9,7 @@
 <ion-content>
   <div id="map">
     <ion-fab vertical="top" horizontal="start">
-      <ion-fab-button color="dark" (click)="presentToast()">Woki</ion-fab-button>
+      <ion-fab-button color="dark" (click)="getDataFromAPI()">Woki</ion-fab-button>
 
     </ion-fab>
 <!--    <ion-fab vertical="bottom" horizontal="start">-->
@@ -39,11 +39,13 @@
     <ion-item-sliding #item>
 
       <ion-item-options side="end">
-        <button ion-button (click)="favorite(item)">Favorite</button>
-        <button ion-button color="danger" (click)="share(item)">Share</button>
         <ion-chip color="primary">
           <ion-icon name="navigate" color="primary"></ion-icon>
           <ion-label> Go</ion-label>
+        </ion-chip>
+        <ion-chip color="danger">
+          <ion-icon name="heart" color="danger"></ion-icon>
+          <ion-label> Save</ion-label>
         </ion-chip>
       </ion-item-options>
       <ion-item>
@@ -57,11 +59,13 @@
     <ion-item-sliding #item>
 
       <ion-item-options side="end">
-        <button ion-button (click)="favorite(item)">Favorite</button>
-        <button ion-button color="danger" (click)="share(item)">Share</button>
         <ion-chip color="primary">
           <ion-icon name="navigate" color="primary"></ion-icon>
           <ion-label> Go</ion-label>
+        </ion-chip>
+        <ion-chip color="danger">
+          <ion-icon name="heart" color="danger"></ion-icon>
+          <ion-label> Save</ion-label>
         </ion-chip>
       </ion-item-options>
       <ion-item>
@@ -75,11 +79,13 @@
     <ion-item-sliding #item>
 
       <ion-item-options side="end">
-        <button ion-button (click)="favorite(item)">Favorite</button>
-        <button ion-button color="danger" (click)="share(item)">Share</button>
         <ion-chip color="primary">
           <ion-icon name="navigate" color="primary"></ion-icon>
           <ion-label> Go</ion-label>
+        </ion-chip>
+        <ion-chip color="danger">
+          <ion-icon name="heart" color="danger"></ion-icon>
+          <ion-label> Save</ion-label>
         </ion-chip>
       </ion-item-options>
       <ion-item>

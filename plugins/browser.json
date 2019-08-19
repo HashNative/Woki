@@ -36,10 +36,16 @@
     },
     "cordova-plugin-background-mode": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-badge": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-file": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   }

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 import { BackgroundMode } from '@ionic-native/background-mode/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 
 @NgModule({
   declarations: [AppComponent ],
@@ -19,6 +20,7 @@ import { BackgroundMode } from '@ionic-native/background-mode/ngx';
     IonicModule.forRoot(),
     AppRoutingModule],
   providers: [
+    HTTP,
     BackgroundMode,
     LocalNotifications,
     StatusBar,
